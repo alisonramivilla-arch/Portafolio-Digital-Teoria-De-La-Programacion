@@ -10,22 +10,17 @@
 ---
 
 ### 🖊️ Nombre:
-**Richard Santiago Guamán Sánchez**
+**Alison Cristina Ramirez Villavicencio**
 
 ### 📜 Carrera:
-**Computación - Segundo Ciclo**
+**Computación**
 
 ### 📗 Asignatura:
 **Teoría de la Programación**
 
-### 🗓️ Período Académico:
-**Septiembre 2025 - Febrero 2026**
-
 ### 👩‍🏫 Docente:
 **Ing. Lissette Geoconda López Faicán**
 
-<br>
-
 <p align="center">
-  <strong><a href="Portafolio.md">***Portafolio Ir al***</a></strong>
+  <strong><a href="Portafolio.md">***IR AL PORTAFOLIO***</a></strong>
 </p>
