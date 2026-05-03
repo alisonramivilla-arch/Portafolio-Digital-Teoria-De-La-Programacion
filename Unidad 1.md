@@ -22,7 +22,7 @@
 <blockquote>
 Es una secuencia lógica y finita de pasos para solucionar un problema.
 <br><br>
-<b>Evidencia de Pseudocódigo en PSeInt:</b>
+<b>Evidencia de Algoritmo en PSeInt:</b>
 <p align="center">
   <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Algoritmo.png" width="650" alt="Pseudocódigo Ahorro Anual">
 </p>
