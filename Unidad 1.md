@@ -67,7 +67,89 @@ Es la ejecución manual o controlada para verificar que la lógica produce los r
 </blockquote>
 </details>
 
+<details>
+<summary><b>💻 ¿Qué es un Lenguaje de Programación?</b></summary>
+<blockquote>
+Es un sistema de signos, reglas sintácticas y semánticas que permiten escribir instrucciones para que una computadora realice tareas específicas. Es el puente de comunicación entre el pensamiento humano y la ejecución binaria.
+</blockquote>
 
+<br>
+
+#### 🔹 Lenguaje C
+Es un lenguaje de nivel medio (combina características de alto y bajo nivel) conocido por su eficiencia y control total sobre el hardware. Es la base de muchos sistemas operativos.
+*   **Ejemplo (Venta de Vehículos):** 
+    ```c
+    #include <stdio.h>
+
+    int main() {
+        // Variables
+        int comision1, comision2, comision3, v1=30000, v2=29000, v3=33000, total;
+
+        // Proceso
+        comision1 = v1 * 0.04;
+        comision2 = v2 * 0.04;
+        comision3 = v3 * 0.04;
+        total = comision1 + comision2 + comision3;
+
+        // Salida
+        printf("La comision del vendedor 1 es: %i\n", comision1);
+        printf("La comision del vendedor 2 es: %i\n", comision2);
+        printf("La comision del vendedor 3 es: %i\n", comision3);
+        printf("El pago total en conjunto es: %i\n", total);
+
+        return 0;
+    }
+    ```
+
+#### 🔹 Lenguaje Java
+Lenguaje orientado a objetos diseñado para ser multiplataforma bajo el lema "escríbelo una vez, ejecútalo en cualquier lugar".
+*   **Ejemplo (Venta de Vehículos):** 
+    ```java
+    public class VentaVehiculos {
+        public static void main(String[] args) {
+            int v1=30000, v2=29000, v3=33000;
+            
+            int comision1 = (int)(v1 * 0.04);
+            int comision2 = (int)(v2 * 0.04);
+            int comision3 = (int)(v3 * 0.04);
+            int total = comision1 + comision2 + comision3;
+
+            System.out.println("La comision del vendedor 1 es: " + comision1);
+            System.out.println("La comision del vendedor 2 es: " + comision2);
+            System.out.println("La comision del vendedor 3 es: " + comision3);
+            System.out.println("El pago total en conjunto es: " + total);
+        }
+    }
+    ```
+
+#### 🔹 Lenguaje Python
+Lenguaje de alto nivel cuya filosofía hace hincapié en la legibilidad del código. Es extremadamente versátil y fácil de aprender.
+*   **Ejemplo (Venta de Vehículos):** 
+    ```python
+    # Variables y Proceso
+    v1, v2, v3 = 30000, 29000, 33000
+
+    comision1 = int(v1 * 0.04)
+    comision2 = int(v2 * 0.04)
+    comision3 = int(v3 * 0.04)
+    total = comision1 + comision2 + comision3
+
+    # Salida
+    print(f"La comision del vendedor 1 es: {comision1}")
+    print(f"La comision del vendedor 2 es: {comision2}")
+    print(f"La comision del vendedor 3 es: {comision3}")
+    print(f"El pago total en conjunto es: {total}")
+    ```
+</details>
+
+<details>
+<summary><b>🧩 ¿Qué es la Programación por Bloques?</b></summary>
+<blockquote>
+Es un entorno de programación visual donde se utilizan "piezas" o bloques de construcción en lugar de escribir código de texto. Esto permite aprender la lógica de programación sin preocuparse por los errores de sintaxis.
+<br><br>
+<b>Ejemplo Visual:</b> Herramientas como Scratch o la vista de bloques en PSeInt.
+</blockquote>
+</details>
 
 ---
 
