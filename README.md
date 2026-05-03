@@ -21,6 +21,9 @@
 ### 👩‍🏫 Docente:
 **Ing. Lissette Geoconda López Faicán**
 
+### 📔 Período Académico:
+**Abril-Agosto 2026**
+
 <p align="center">
   <strong><a href="Portafolio.md">***IR AL PORTAFOLIO***</a></strong>
 </p>
