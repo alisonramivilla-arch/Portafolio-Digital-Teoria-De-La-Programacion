@@ -8,13 +8,31 @@
 
 <br>
 
-###  ***Objetivo***
-Elaborar un Portafolio Digital que registre y organice las actividades de todo el ciclo, integrando evidencias y reflexiones que consoliden los aprendizajes sobre algoritmos y lenguajes de programación de alto nivel.
-## 🚀 Índice de Contenidos
- 📂 Unidad 1 
- <strong><a href="Unidad 1.md">***IR A UNidad 1***</a></strong>
-</p>
-* [📂 **Unidad 2:** Lógica de Control y Condicionales](#-unidad-2)
-* [📂 **Unidad 3:** Bucles y Estructuras Complejas](#-unidad-3)
+---
+
+## 🎯 Objetivo General del Portafolio
+Elaborar un Portafolio Digital que registre y organice las actividades de la Unidad, integrando evidencias y reflexiones que consoliden los aprendizajes sobre algoritmos y programas con estructuras secuenciales.
 
 ---
+
+## 📘 Unidad 1: Fundamentos de Algoritmos y Programas
+### 🎯 Objetivo de la Unidad
+Desarrollar la capacidad de analizar problemas computacionales básicos y diseñar soluciones mediante algoritmos secuenciales, asegurando la correcta manipulación de entradas, procesos lógicos y salidas de datos en diversos lenguajes de programación.
+
+**<strong><a href="Unidad 1.md">***IR A LA UNIDAD 1***</a></strong>**
+
+---
+
+## 📘 Unidad 2: Estructuras algorítmicas de control 
+### 🎯 Objetivo de la Unidad
+  ...
+
+**<strong><a href="Unidad 2.md">***IR A LA UNIDAD 2***</a></strong>**
+
+---
+
+## 📘 Unidad 3: Programación modular y estructura de datos estáticas
+### 🎯 Objetivo de la Unidad
+ ...
+
+**<strong><a href="Unidad 3.md">***IR A LA UNIDAD 3***</a></strong>**
