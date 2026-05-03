@@ -165,13 +165,63 @@ En este video se observa la resolución del desafío "Dieta a base de churrascos
 
 ---
 
-<a name="reflexion"></a>
-## 🤔 3. Reflexión Crítica
-> [!NOTE]
-> La transición del pensamiento lógico al pseudocódigo se facilitó gracias a las herramientas visuales. Comprender que cada instrucción debe ser finita y precisa es la base para avanzar hacia lenguajes más complejos.
+## 🚀 4. Ejercicio Práctico: Estructura Secuencial
+*Desarrollo completo del ejercicio de cálculo de distancia entre dos puntos dado en clase.*
 
+### 📝 A. Planteamiento del Problema
+Diseñar un programa que permita calcular la distancia entre dos puntos $(x_1, y_1)$ y $(x_2, y_2)$ en el plano cartesiano, utilizando la fórmula matemática de la distancia euclidiana.
+
+### 🔍 B. Análisis del Problema
+* **Entradas:** Coordenadas de los dos puntos ($x_1, y_1, x_2, y_2$) de tipo Real.
+* **Proceso:** Aplicar la fórmula: $distancia = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.
+* **Salidas:** El valor resultante de la distancia.
+
+### 📐 C. Diseño del Algoritmo
+*A continuación se presenta la lógica estructurada para resolver el problema.*
+
+<details>
+<summary><b>ver Pseudocódigo (PSeInt)</b></summary>
 <br>
-
 <p align="center">
-  <a href="#">🔼 Volver al inicio</a>
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Algoritmo_Distancia.png" width="600" alt="Pseudocódigo Distancia">
 </p>
+</details>
+
+<details>
+<summary><b>ver Diagrama de Flujo</b></summary>
+<br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Diagrama_Distancia.png" width="400" alt="Diagrama de Flujo Distancia">
+</p>
+</details>
+
+### 💻 D. Codificación (Código Fuente en C)
+*Implementación del algoritmo en lenguaje C, haciendo uso de la librería `<math.h>` para funciones matemáticas.*
+
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    // Variables
+    float x1, x2, y1, y2, distancia;
+
+    // Entrada
+    printf("Ingrese x1: ");
+    scanf("%f", &x1);
+    printf("Ingrese y1: ");
+    scanf("%f", &y1);
+    printf("Ingrese x2: ");
+    scanf("%f", &x2);
+    printf("Ingrese y2: ");
+    scanf("%f", &y2);
+
+    // Proceso
+    distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+    // Salida
+    printf("La distancia es: %f", distancia);
+
+    return 0;
+}
