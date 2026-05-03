@@ -25,5 +25,5 @@
 **Abril-Agosto 2026**
 
 <p align="center">
-  <strong><a href="Portafolio.md">***IR AL PORTAFOLIO***</a></strong>
+  <strong><a href="Portafolio Teoría De La Programación.md">***IR AL PORTAFOLIO***</a></strong>
 </p>
