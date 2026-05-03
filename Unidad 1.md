@@ -253,8 +253,24 @@ A continuación, se muestra la evidencia de la compilación y ejecución exitosa
 <p align="center">
   <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Comandos.png" width="700" alt="Resultado Terminal Distancia">
 </p>
-
 > [!NOTE]
 > Como se observa en la captura, el programa solicita las coordenadas de dos puntos y devuelve el cálculo exacto de la distancia, confirmando que la lógica del código fuente es correcta.
 
+### 🧠 G. Principales Dificultades y Reflexión Crítica
 
+#### ❗ Dificultades Encontradas
+Durante el desarrollo de esta unidad, se presentaron retos significativos en el manejo de nuevas herramientas tecnológicas:
+* **Entorno de Visual Studio Code:** Aprender a configurar correctamente el editor y entender el flujo de trabajo entre el editor de texto y la terminal integrada fue un proceso que requirió paciencia.
+* **Manejo de GitHub:** La gestión del repositorio, asegurar que los archivos se visualizaran correctamente y el uso de Markdown para documentar el portafolio representó una curva de aprendizaje importante.
+* **Memorización de Estructuras:** Internalizar la sintaxis estricta del lenguaje C y la estructura lógica de los algoritmos para evitar errores de sintaxis durante la compilación.
+
+#### 📝 Reflexión Crítica
+El proceso de aprendizaje en esta unidad ha sido fundamental para mi formación en este primer ciclo:
+
+1.  **Dominio de Visual Studio Code:** Un aprendizaje práctico clave fue la incorporación de **combinaciones de teclas (shortcuts)**. Estas facilidades del teclado permiten navegar más rápido por el código, ahorrar tiempo en la escritura y organizar mejor el espacio de trabajo en el monitor.
+2.  **Influencia de la Guía Docente:** La metodología y claridad de la **docente al mando de la asignatura** han sido determinantes. Una enseñanza bien estructurada facilita la transición de conceptos abstractos a aplicaciones prácticas, permitiendo que la lógica de programación sea más fácil de asimilar.
+3.  **Importancia de la Compilación:** Entender que la computadora no lee el código directamente, sino que necesita un proceso de traducción (compilación), me ha dado una visión más clara de cómo funciona realmente el software.
+
+<p align="center">
+**<strong><a href="README.md">**INICIO**</a></strong>**
+</p>
