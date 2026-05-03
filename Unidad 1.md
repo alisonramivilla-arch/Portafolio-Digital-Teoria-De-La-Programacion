@@ -147,9 +147,21 @@ Lenguaje de alto nivel cuya filosofía hace hincapié en la legibilidad del cód
 <blockquote>
 Es un entorno de programación visual donde se utilizan "piezas" o bloques de construcción en lugar de escribir código de texto. Esto permite aprender la lógica de programación sin preocuparse por los errores de sintaxis.
 <br><br>
-<b>Ejemplo Visual:</b> Herramientas como Scratch o la vista de bloques en PSeInt.
+<b>Ejemplo Interactivo (Pilas Bloques):</b> 
+En este video se observa la resolución del desafío "Dieta a base de churrascos", construyendo un algoritmo secuencial paso a paso.
 </blockquote>
+
+<br>
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/96694286-6ea0-4f41-a2d6-de6dfa881820" width="80%" controls>
+   
+  </video>
+</div>
+
+<br>
 </details>
+
 
 ---
 
