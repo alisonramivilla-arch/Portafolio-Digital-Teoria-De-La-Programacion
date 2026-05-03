@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="#glosario">📚 Glosario con Ejemplos</a> • 
-  <a href="#ejercicio">💻 Caso Práctico</a> • 
+  <a href="#ejercicio">💻 Ejercicio Práctico</a> • 
   <a href="#reflexion">🤔 Reflexión</a> • 
   <a href="#recursos">📂 Recursos</a>
 </p>
@@ -63,7 +63,7 @@ Es la ejecución manual o controlada para verificar que la lógica produce los r
   <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Prueba%20de%20escritorio.png" width="550" alt="Consola PSeInt">
 </p>
 <br>
-<i>Como se observa, al ingresar 75, el sistema procesa correctamente los ahorros semanal, mensual y anual.</i>
+
 </blockquote>
 </details>
 
@@ -165,23 +165,28 @@ En este video se observa la resolución del desafío "Dieta a base de churrascos
 
 ---
 
+---
+
 ## 🚀 4. Ejercicio Práctico: Estructura Secuencial
-*Desarrollo completo del ejercicio de cálculo de distancia entre dos puntos dado en clase.*
+*Desarrollo completo del ejercicio de cálculo de distancia entre dos puntos.*
+
+### 📑 Definición: ¿Qué es una Estructura Secuencial?
+> La **Estructura Secuencial** es la forma más simple de programación, donde las instrucciones se ejecutan una tras otra, en el orden en que aparecen escritas. En este modelo, la salida de una sentencia es la entrada de la siguiente, sin saltos ni desviaciones, siguiendo el flujo: **Inicio → Entrada de datos → Proceso → Salida de resultados → Fin**.
 
 ### 📝 A. Planteamiento del Problema
-Diseñar un programa que permita calcular la distancia entre dos puntos $(x_1, y_1)$ y $(x_2, y_2)$ en el plano cartesiano, utilizando la fórmula matemática de la distancia euclidiana.
+Diseñar un programa que permita calcular la distancia entre dos puntos $( X_1, Y_1 )$ y $(X_2, Y_2)$ en el plano cartesiano, utilizando la fórmula de la distancia euclidiana.
 
 ### 🔍 B. Análisis del Problema
-* **Entradas:** Coordenadas de los dos puntos ($x_1, y_1, x_2, y_2$) de tipo Real.
-* **Proceso:** Aplicar la fórmula: $distancia = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.
-* **Salidas:** El valor resultante de la distancia.
-
+* **Entradas:** Coordenadas `x1`, `y1`, `x2`, `y2`.
+* **Proceso:** Aplicar la fórmula: `distancia = sqrt((x2 - x1)^2 + (y2 - y1)^2)`.
+* **Salidas:** Resultado de la distancia calculada.
+* 
 ### 📐 C. Diseño del Algoritmo
-*A continuación se presenta la lógica estructurada para resolver el problema.*
-
+*Lógica estructurada para resolver el problema antes de la codificación.*
 <details>
-<summary><b>ver Pseudocódigo (PSeInt)</b></summary>
+<summary><b>ver Pseudocódigo en Pseint</b></summary>
 <br>
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Algoritmo_Distancia.png" width="600" alt="Pseudocódigo Distancia">
 </p>
@@ -225,3 +230,31 @@ int main(){
 
     return 0;
 }
+```
+### ⚙️ E. Compilación y Ejecución en Windows (PowerShell)
+Para transformar el código fuente en un programa funcional, se utiliza el compilador **GCC**. Basado en la terminal, el proceso sigue esta estructura:
+
+#### 1. Compilación: `gcc .\nombre.c -o nombre`
+Este comando es la base de la creación del software. El compilador traduce el lenguaje C a instrucciones binarias que el procesador puede entender.
+* **`gcc`**: Invoca el compilador GNU Compiler Collection.
+* **`.\Calculardistancia.c`**: Indica la ruta del archivo fuente en el directorio actual.
+* **`-o`**: Bandera de "Output" que define el nombre del archivo de salida.
+* **`Calculardistancia`**: Nombre del archivo **ejecutable (.exe)** que se generará.
+
+#### 2. Ejecución: `.\nombre`
+Una vez que el compilador genera el archivo ejecutable de forma exitosa, se utiliza este comando para iniciar el programa.
+* **`.\Calculardistancia`**: Ejecuta el archivo binario (en Windows se trata internamente del archivo **Calculardistancia.exe**).
+* > [!IMPORTANT]
+> **El archivo .exe**: Es el resultado final de la compilación. Es un archivo independiente que contiene la lógica del programa lista para ser procesada por el sistema operativo Windows sin necesidad de abrir el código fuente nuevamente. Si realizas cambios en el código, es obligatorio repetir el proceso de compilación para actualizar el ejecutable.
+
+  ### 🖥️ F. Resultado en Terminal
+A continuación, se muestra la evidencia de la compilación y ejecución exitosa del algoritmo en la terminal de Windows, utilizando los comandos `gcc` para generar el ejecutable y `.\` para correr el programa:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Comandos.png" width="700" alt="Resultado Terminal Distancia">
+</p>
+
+> [!NOTE]
+> Como se observa en la captura, el programa solicita las coordenadas de dos puntos y devuelve el cálculo exacto de la distancia, confirmando que la lógica del código fuente es correcta.
+
+
