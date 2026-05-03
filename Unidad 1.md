@@ -4,16 +4,17 @@
   <img src="https://unl.edu.ec/sites/default/files/logogris%20copia.png" alt="Logotipo UNL" width="350">
 </p>
 
+
 <p align="center">
-  <a href="#glosario">📚 Glosario con Ejemplos</a> • 
-  <a href="#ejercicio">💻 Ejercicio Práctico</a> • 
-  <a href="#reflexion">🤔 Reflexión</a> • 
-  <a href="#recursos">📂 Recursos</a>
+📚 Glosario con Ejemplos</a> •
+💻 Ejercicio Práctico</a> •
+🧐 Reflexión</a>
 </p>
+
 
 ---
 
-<a name="glosario"></a>
+
 ## 📂 1. Glosario Interactivo de Conceptos
 *Despliega cada concepto para ver su definición y la evidencia visual del ejemplo **Ahorro Anual**.*
 
@@ -165,9 +166,8 @@ En este video se observa la resolución del desafío "Dieta a base de churrascos
 
 ---
 
----
 
-## 🚀 4. Ejercicio Práctico: Estructura Secuencial
+## 🚀 2. Ejercicio Práctico: Estructura Secuencial
 *Desarrollo completo del ejercicio de cálculo de distancia entre dos puntos.*
 
 ### 📑 Definición: ¿Qué es una Estructura Secuencial?
@@ -244,7 +244,8 @@ Este comando es la base de la creación del software. El compilador traduce el l
 #### 2. Ejecución: `.\nombre`
 Una vez que el compilador genera el archivo ejecutable de forma exitosa, se utiliza este comando para iniciar el programa.
 * **`.\Calculardistancia`**: Ejecuta el archivo binario (en Windows se trata internamente del archivo **Calculardistancia.exe**).
-* > [!IMPORTANT]
+> !IMPORTANTE
+> 
 > **El archivo .exe**: Es el resultado final de la compilación. Es un archivo independiente que contiene la lógica del programa lista para ser procesada por el sistema operativo Windows sin necesidad de abrir el código fuente nuevamente. Si realizas cambios en el código, es obligatorio repetir el proceso de compilación para actualizar el ejecutable.
 
   ### 🖥️ F. Resultado en Terminal
@@ -253,10 +254,11 @@ A continuación, se muestra la evidencia de la compilación y ejecución exitosa
 <p align="center">
   <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Comandos.png" width="700" alt="Resultado Terminal Distancia">
 </p>
-> [!NOTE]
-> Como se observa en la captura, el programa solicita las coordenadas de dos puntos y devuelve el cálculo exacto de la distancia, confirmando que la lógica del código fuente es correcta.
+> !NOTA
 
-### 🧠 G. Principales Dificultades y Reflexión Crítica
+> **Como se observa en la captura, el programa solicita las coordenadas de dos puntos y devuelve el cálculo exacto de la distancia, confirmando que la lógica del código fuente es correcta.**
+
+### 🧠 3. Principales Dificultades y Reflexión Crítica
 
 #### ❗ Dificultades Encontradas
 Durante el desarrollo de esta unidad, se presentaron retos significativos en el manejo de nuevas herramientas tecnológicas:
