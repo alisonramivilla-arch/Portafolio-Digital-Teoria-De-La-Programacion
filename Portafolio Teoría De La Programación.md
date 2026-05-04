@@ -10,33 +10,51 @@
 
 ---
 
-## 🎯 Objetivo General del Portafolio
-Elaborar un Portafolio Digital que registre y organice las actividades del ciclo académico, integrando evidencias y reflexiones que consoliden los aprendizajes adquiridos a lo largo de las unidades correspondientes.
----
-
-## 📘 Unidad 1: Fundamentos de Algoritmos y Programas
-### 🎯 Objetivo de la Unidad
-Desarrollar la capacidad de analizar problemas computacionales básicos y diseñar soluciones mediante algoritmos secuenciales, asegurando la correcta manipulación de entradas, procesos lógicos y salidas de datos en diversos lenguajes de programación.
-
-**<strong><a href="Unidad 1.md">***IR A LA UNIDAD 1***</a></strong>**
+## 📝 Introducción General del Ciclo
+Este portafolio digital es un espacio de compilación académica donde se registra el progreso técnico y teórico alcanzado en la asignatura de **Teoría de la Programación**. El objetivo principal es documentar la evolución en el dominio de la lógica algorítmica y la implementación de soluciones mediante el uso de lenguajes de programación, integrando buenas prácticas de desarrollo desde el primer ciclo de la carrera.
 
 ---
 
-## 📘 Unidad 2: Estructuras algorítmicas de control 
-### 🎯 Objetivo de la Unidad
-  ...
+## 📚 Unidades de Aprendizaje (Evidencias)
 
-**<strong><a href="Unidad 2.md">***IR A LA UNIDAD 2***</a></strong>**
+<details>
+<summary><b>📂 Unidad 1: Algoritmos y Estructuras Secuenciales</b></summary>
+
+### Temas y Evidencias
+*   **Resolución de problemas a través de algoritmos:** Diseño y estructuración de pasos lógicos para la solución de problemas.
+*   **Uso de fórmulas en código:** Implementación de expresiones matemáticas y procesos secuenciales en lenguaje C.
+*   **Entorno Técnico:** Compilación manual mediante **GCC** y gestión de archivos en terminal.
+
+[Ver carpeta de evidencias](./Unidad%201)
+</details>
+
+<details>
+<summary><b>📂 Unidad 2: Estructuras de Control</b></summary>
+
+*Contenido en desarrollo conforme avance el periodo académico.*
+
+</details>
+
+<details>
+<summary><b>📂 Unidad 3: Programación Estructurada Avanzada</b></summary>
+
+*Contenido en desarrollo conforme avance el periodo académico.*
+
+</details>
 
 ---
 
-## 📘 Unidad 3: Programación modular y estructura de datos estáticas
-### 🎯 Objetivo de la Unidad
- ...
+## 🛠️ Herramientas y Ecosistema
+Para el desarrollo de este portafolio y las prácticas de clase, se utilizan herramientas de estándar profesional que permiten una comprensión profunda de la computación:
 
-**<strong><a href="Unidad 3.md">***IR A LA UNIDAD 3***</a></strong>**
+| Herramienta | Aplicación |
+| :--- | :--- |
+| **Visual Studio Code** | Editor de código principal. |
+| **GCC** | Compilación manual por terminal. |
+| **Lucidchart / PSeInt** | Diagramación y lógica inicial. |
 
 ---
+
 
 ## 🏁 Conclusiones Generales
 > *Esta sección se encuentra actualmente en desarrollo y se completará al finalizar el ciclo académico.*
@@ -66,6 +84,19 @@ En la elaboración de este portafolio digital, se ha hecho uso de herramientas d
 *   **Supervisión Humana:** Todo el código fuente en C, los ejercicios lógicos y las reflexiones son de autoría propia, validados manualmente.
 *   **Ética Académica:** La IA ha servido como soporte de presentación, sin sustituir el razonamiento lógico requerido en la asignatura.
 </details>
+
+
+<details>
+<summary><b>🧘 Reflexión de Formación Profesional</b></summary>
+<br>
+
+La programación no es solo escribir código, sino desarrollar un pensamiento lógico estructurado. A lo largo de este ciclo, el portafolio refleja la transición de conceptos abstractos a soluciones tangibles mediante la resolución de problemas algorítmicos. El manejo de herramientas de bajo nivel y la organización sistemática de las evidencias fortalecen la base técnica necesaria para enfrentar los desafíos futuros en las Ciencias de la Computación.
+</details>
+---
+<div align="center">
+<b>Facultad de la Energía, las Industrias y los Recursos Naturales No Renovables</b><br>
+Loja, Ecuador - 2026
+</div>
 
 ---
 
