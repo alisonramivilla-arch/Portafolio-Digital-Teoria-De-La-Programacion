@@ -11,8 +11,7 @@
 ---
 
 ## 🎯 Objetivo General del Portafolio
-Elaborar un Portafolio Digital que registre y organice las actividades de la Unidad, integrando evidencias y reflexiones que consoliden los aprendizajes sobre algoritmos y programas con estructuras secuenciales.
-
+Elaborar un Portafolio Digital que registre y organice las actividades del ciclo académico, integrando evidencias y reflexiones que consoliden los aprendizajes adquiridos a lo largo de las unidades correspondientes.
 ---
 
 ## 📘 Unidad 1: Fundamentos de Algoritmos y Programas
