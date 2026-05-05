@@ -252,16 +252,19 @@ Una vez que el compilador genera el archivo ejecutable de forma exitosa, se util
 A continuación, se muestra la evidencia de la compilación y ejecución exitosa del algoritmo en la terminal de Windows, utilizando los comandos `gcc` para generar el ejecutable y `.\` para correr el programa:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Comandos.png" width="700" alt="Resultado Terminal Distancia">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Terminal.png" width="700" alt="Resultado Terminal Distancia">
 </p>
 > !NOTA
 
 > **Como se observa en la captura, el programa solicita las coordenadas de dos puntos y devuelve el cálculo exacto de la distancia, confirmando que la lógica del código fuente es correcta.**
 
-  ### 🖥️ F. Prueba de escritorio
-En el caso expuesto no podemos realizar una prueba de escritorio porque el resultado es único.
+  ### 🔍 G. Prueba de escritorio
+  
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Prueba%20de%20escritorio%20C.png" width="700" alt="Resultado Terminal Distancia">
+</p>
 
-### 🧠 3. Principales Dificultades y Reflexión Crítica
+## 🧠 3. Principales Dificultades y Reflexión Crítica
 
 #### ❗ Dificultades Encontradas
 Durante el desarrollo de esta unidad, se presentaron retos significativos en el manejo de nuevas herramientas tecnológicas:
