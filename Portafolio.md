@@ -38,7 +38,7 @@ Este portafolio digital es un espacio de compilación académica donde se regist
 </details>
 
 <details>
-<summary><b>📂 Unidad 3: Programación Estructurada Avanzada</b></summary>
+<summary><b>📂 Unidad 3: Programación Modular y Estructuras de Datos Estáticos</b></summary>
 
 *Contenido en desarrollo conforme avance el periodo académico.*
 
