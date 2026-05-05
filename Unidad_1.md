@@ -258,6 +258,9 @@ A continuación, se muestra la evidencia de la compilación y ejecución exitosa
 
 > **Como se observa en la captura, el programa solicita las coordenadas de dos puntos y devuelve el cálculo exacto de la distancia, confirmando que la lógica del código fuente es correcta.**
 
+  ### 🖥️ F. Prueba de escritorio
+En el caso expuesto no podemos realizar una prueba de escritorio porque el resultado es único.
+
 ### 🧠 3. Principales Dificultades y Reflexión Crítica
 
 #### ❗ Dificultades Encontradas
