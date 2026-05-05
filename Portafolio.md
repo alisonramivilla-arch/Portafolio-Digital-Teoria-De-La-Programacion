@@ -29,7 +29,7 @@ Este portafolio digital es un espacio de compilación académica donde se regist
 </details>
 
 <details>
-<summary><b>📂 Unidad 2: Estructuras de Control</b></summary>
+<summary><b>📂 Unidad 2: Estructuras Algorítmicas de Control </b></summary>
 
 *Contenido en desarrollo conforme avance el periodo académico.*
 
