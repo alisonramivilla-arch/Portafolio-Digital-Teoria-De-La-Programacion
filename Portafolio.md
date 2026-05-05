@@ -25,7 +25,7 @@ Este portafolio digital es un espacio de compilación académica donde se regist
 *   **Uso de fórmulas en código:** Implementación de expresiones matemáticas y procesos secuenciales en lenguaje C.
 *   **Entorno Técnico:** Compilación manual mediante **GCC** y gestión de archivos en terminal.
 
-[Ver carpeta de evidencias](./Unidad%201)
+  [![Visulizar Unidad 1](https://img.shields.io/badge/ACCEDER%20A%20LA%20UNIDAD_1-CLICK%20AQUÍ-7434eb?style=for-the-badge&logo=rocket&logoColor=white)](./Unidad_1.md)
 </details>
 
 <details>
@@ -33,12 +33,16 @@ Este portafolio digital es un espacio de compilación académica donde se regist
 
 *Contenido en desarrollo conforme avance el periodo académico.*
 
+  [![Visulizar Unidad 2](https://img.shields.io/badge/ACCEDER%20A%20LA%20UNIDAD_2-CLICK%20AQUÍ-7434eb?style=for-the-badge&logo=rocket&logoColor=white)](./Unidad_2.md)
+
 </details>
 
 <details>
 <summary><b>📂 Unidad 3: Programación Estructurada Avanzada</b></summary>
 
 *Contenido en desarrollo conforme avance el periodo académico.*
+
+  [![Visulizar Unidad 3](https://img.shields.io/badge/ACCEDER%20A%20LA%20UNIDAD_3-CLICK%20AQUÍ-7434eb?style=for-the-badge&logo=rocket&logoColor=white)](./Unidad_3.md)
 
 </details>
 
