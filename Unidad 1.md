@@ -274,5 +274,5 @@ El proceso de aprendizaje en esta unidad ha sido fundamental para mi formación 
 3.  **Importancia de la Compilación:** Entender que la computadora no lee el código directamente, sino que necesita un proceso de traducción (compilación), me ha dado una visión más clara de cómo funciona realmente el software.
 
 <p align="center">
-**<strong><a href="README.md">**INICIO**</a></strong>**
+**<strong><a href="Portafolio.md">**INICIO**</a></strong>**
 </p>
