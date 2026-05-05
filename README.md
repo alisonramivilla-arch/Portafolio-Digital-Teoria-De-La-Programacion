@@ -20,6 +20,9 @@
       <td align="center">
         <img src="https://img.shields.io/badge/CICLO-Primero%20%22A%22-green?style=for-the-badge" alt="Ciclo">
       </td>
+       <td align="center">
+        <img src="https://img.shields.io/badge/DOCENTE-Lissette%20Geoconda%20Lopez%20Faican-blue?style=for-the-badge&logo=c" alt="Docente">
+      </td>
     </tr>
   </table>
 
