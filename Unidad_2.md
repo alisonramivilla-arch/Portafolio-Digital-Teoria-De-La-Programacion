@@ -10,8 +10,9 @@ Haz clic en cada sección para desplegar los fundamentos conceptuales, pseudocó
 
 <details>
 <summary><b>🔍 CLIC AQUÍ para explorar las Estructuras Condicionales (Decisiones)</b></summary>
+<blockquote>
 
-> 💡 **Definición:** Las estructuras condicionales permiten bifurcar el flujo de ejecución de un algoritmo basándose en la evaluación de una expresión lógica o booleana (Verdadero/Falso).
+  > 💡 **Definición:** Las estructuras condicionales permiten bifurcar el flujo de ejecución de un algoritmo basándose en la evaluación de una expresión lógica o booleana (Verdadero/Falso).
 
 #### A. Condicional Simple (`if`)
 Evalúa una condición. Si es verdadera, ejecuta el bloque interno; si es falsa, ignora las instrucciones y continúa de forma secuencial.
