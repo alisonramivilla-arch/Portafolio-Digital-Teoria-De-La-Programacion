@@ -277,7 +277,7 @@ int main() {
     printf("\n🎉 ¡Proceso finalizado con éxito para los %d alumnos!\n", n);
     return 0;
 }
-
+```
 
 
 
