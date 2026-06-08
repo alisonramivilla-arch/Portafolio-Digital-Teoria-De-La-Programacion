@@ -166,9 +166,10 @@ En este video se observa la resolución del desafío "Dieta a base de churrascos
 
 ---
 
-
 ## 🚀 2. Ejercicio Práctico: Estructura Secuencial
-*Desarrollo completo del ejercicio de cálculo de distancia entre dos puntos.*
+
+<details>
+<summary><b>📐Desarrollo completo del ejercicio</b></summary>
 
 ### 📑 Definición: ¿Qué es una Estructura Secuencial?
 > La **Estructura Secuencial** es la forma más simple de programación, donde las instrucciones se ejecutan una tras otra, en el orden en que aparecen escritas. En este modelo, la salida de una sentencia es la entrada de la siguiente, sin saltos ni desviaciones, siguiendo el flujo: **Inicio → Entrada de datos → Proceso → Salida de resultados → Fin**.
@@ -263,6 +264,10 @@ A continuación, se muestra la evidencia de la compilación y ejecución exitosa
 <p align="center">
   <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Prueba%20de%20escritorio%20C.png" width="700" alt="Resultado Terminal Distancia">
 </p>
+
+</details>
+
+---
 
 ## 🧠 3. Principales Dificultades y Reflexión Crítica
 
