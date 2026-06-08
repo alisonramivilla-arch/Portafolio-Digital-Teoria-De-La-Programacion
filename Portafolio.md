@@ -16,6 +16,7 @@ Este portafolio digital es un espacio de compilación académica donde se regist
 ---
 
 ## 📚 Unidades de Aprendizaje (Evidencias)
+*Haga clic en cada sección para ver su contenido*
 
 <details>
 <summary><b>📂 Unidad 1: Algoritmos y Estructuras Secuenciales</b></summary>
