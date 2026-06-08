@@ -93,8 +93,6 @@ Se presentan cuando, al cumplirse o no una condición inicial, se requiere evalu
 <details>
 <summary><b>🔄 CLIC AQUÍ para explorar las Estructuras Repetitivas</b></summary>
 
-<br>
-
 
 > 💡 **Concepto Clave:** Los bucles permiten ejecutar un bloque de instrucciones múltiples veces de forma automatizada. Se rigen bajo una condición de parada para evitar ciclos infinitos que saturen la memoria.
 
@@ -205,81 +203,95 @@ Es un ciclo determinado ideal para cuando conocemos de antemano la **cantidad ex
 
 ---
 
-### 💻 2. Caso Práctico: Sistema de Calificaciones de Computación
+### 💻 2. Ejercicio Practico Alternativo
 
+<details>
+<summary><b>💻 CLIC AQUÍ para explorar el caso práctico</b></summary>
 
+####Sistema de Evaluación de Becas Académicas
+  
+#### 📝 A. Planteamiento del Problema
+La Universidad Nacional de Loja requiere un programa interactivo en lenguaje C para evaluar las solicitudes de un grupo de "n" estudiantes que postulan a las *Becas de Excelencia Académica y Apoyo Socioeconómico*. El algoritmo debe registrar de forma iterativa el promedio global del ciclo anterior del estudiante y su puntaje de vulnerabilidad socioeconómica (en una escala de 0 a 10). Se debe aplicar una **validación perimetral rigurosa** para asegurar que los datos no estén fuera de rango, calcular un índice de priorización y determinar el porcentaje de cobertura de beca adjudicado mediante una escalera condicional de toma de decisiones.
 
-#### A. El Desafío (Planteamiento del Problema)
-Diseñar un algoritmo bajo el lenguaje de programación C que procese de forma iterativa las calificaciones definitivas de un grupo de $n$ estudiantes. [cite_start]El sistema debe solicitar las notas, aplicar una **validación perimetral** (las notas deben estar estrictamente entre 0 y 10), calcular el promedio ponderado y categorizar el desempeño del alumno.
+#### 📊 B. Panel de Análisis del Algoritmo (Estructura Vertical)
 
-#### B. Panel de Análisis del Algoritmo
+| Componente | 📥 Datos de Entrada |
+| :-: | :-- |
+| **Descripción** | • Cantidad de estudiantes postulantes a procesar (`n`).<br>• Promedio académico final del ciclo anterior (`promedio`).<br>• Puntaje de necesidad o vulnerabilidad económica (`socioeconomico`). |
+| **Variables** | • `n` (entero para el control de iteraciones del bucle principal).<br>• `promedio`, `socioeconomico` (flotantes para almacenar datos de precisión con decimales). |
 
-💡 *Usa esta tabla interactiva para mapear las variables y procesos esenciales del problema:*
+| Componente | ⚙️ Proceso |
+| :-: | :-- |
+| **Descripción** | **1. Control Iterativo:** Un ciclo `for` se encarga de segmentar el análisis individual de cada postulante.<br>**2. Validación de Datos:** Estructura de control `do-while` que atrapa y rechaza valores basuras (menores a 0 o mayores a 10).<br>**3. Cálculo del Índice:** Operación matemática lineal ponderando el rendimiento cognitivo al 60% y el factor socioeconómico al 40%:<br>&nbsp;&nbsp;&nbsp;&nbsp;• $IP = (promedio \times 0.60) + (socioeconomico \times 0.40)$<br>**4. Adjudicación Lógica:** Clasificación por rangos mediante bloques de bifurcación condicional anidada para determinar la cobertura del beneficio. |
+| **Variables / Fórmulas**| • `i` (entero, contador incremental del bucle `for`).<br>• $IP = (promedio \times 0.60) + (socioeconomico \times 0.40)$ |
 
-| Componente | 📥 Datos de Entrada / Variables | ⚙️ Proceso / Fórmulas | 📤 Datos de Salida |
-| :--- | :--- | :--- | :--- |
-| **Descripción** | • Número de alumnos (`n`)<br>• Notas parciales: `APE`, `AA`, `ACD`, `ES`. | **1. Validación:** Ciclo `do-while`. <br>**2. Ponderación:** <br>$NF = (APE \times 0.25) + (AA \times 0.20) + (ACD \times 0.20) + (ES \times 0.35)$ | • Identificador del alumno.<br>• Nota Final (`NF`) formateada a 2 decimales.<br>• Nivel de rendimiento. |
-| **Tipo de Dato**| `int` (enteros) y `float` (reales) | Operadores lógicos (`\|\|`) y aritméticos. | Mensajes de texto estructurados en consola. |
+| Componente | 📤 Datos de Salida |
+| :-: | :-- |
+| **Descripción** | • Despliegue secuencial del identificador en orden correlativo del alumno evaluado.<br>• Impresión en consola del Índice de Priorización (`IP`) calculado con precisión a 2 decimales.<br>• Mensaje explícito con el dictamen final del beneficio adjudicado (Beca Completa, Media Beca, etc.). |
+| **Variables** | • `i` (identificador numérico activo).<br>• `IP` (flotante con el índice definitivo). |
 
 ---
 
-#### C. Código Fuente Animado y Comentado en C
+#### 🗺️ C. Diseño del Algoritmo (Diagramación Vertical)
 
-> 🛠️ **Nota de Optimización:** Este código implementa un lazo `do-while` interno para filtrar datos erróneos y una escalera de `else if` que ahorra ciclos de reloj al procesador al detener las comprobaciones en cuanto halla la condición verdadera.
+*(Aquí puedes insertar la captura del diagrama de flujo de este ejercicio generado en PSeInt)*
+
+---
+
+#### 🛠️ D. Codificación (Código Fuente Optimizado en Lenguaje C)
 
 ```c
 #include <stdio.h>
 
 int main() {
-    int n, a;
-    float APE, AA, ACD, ES, NF;
-
-    printf("===============================================\n");
-    printf("   SISTEMA DE CALIFICACIONES DE COMPUTACIÓN    \n");
-    printf("===============================================\n");
-    printf("Ingrese la cantidad de estudiantes a procesar: ");
+    int n, i;
+    float promedio, socioeconomico, IP;
+    //Datos de Entrada
+    printf("---SISTEMA DE ADJUDICACION DE BECAS - UNL---\n");
+    printf("Ingrese la cantidad de postulantes a evaluar: \n");
     scanf("%d", &n);
-
-    // [BUCLE EXTERNO]: Controla el recorrido de todos los estudiantes
-    for(a = 1; a <= n; a++) {
-        printf("\n🔹 Procesando datos del Estudiante Nro. %d:\n", a);
-
-        // [BUCLE INTERNO]: Validación rigurosa de datos de entrada
+    // BUCLE EXTERNO
+    for(i = 1; i <= n; i++) {
+        printf("\n Evaluando Postulante Nro. %d:\n", i);
         do {
-            printf(" -> Nota APE (0-10): "); scanf("%f", &APE);
-            printf(" -> Nota AA  (0-10): "); scanf("%f", &AA);
-            printf(" -> Nota ACD (0-10): "); scanf("%f", &ACD);
-            printf(" -> Nota ES  (0-10): "); scanf("%f", &ES);
-
-            if(APE > 10 || AA > 10 || ACD > 10 || ES > 10 || APE < 0 || AA < 0 || ACD < 0 || ES < 0) {
-                printf("\n❌ [ERROR] ¡Valores inválidos! Las notas deben estar entre 0 y 10. Reintente.\n");
+            //Datos de Entrada
+            printf(" -> Promedio Academico (0-10): "); 
+            scanf("%f", &promedio);
+            printf(" -> Puntaje Socioeconomico (0-10): "); 
+            scanf("%f", &socioeconomico);
+            // Condicionales
+            if(promedio < 0 || promedio > 10 || socioeconomico < 0 || socioeconomico > 10) {
+                //Datos de Salida
+                printf("\n [ERROR] Datos fuera de rango. Los valores deben ser de 0 a 10.\n");
+                printf("Ingrese nuevamente los datos del estudiante %i\n", i);
             }
-        } while(APE > 10 || AA > 10 || ACD > 10 || ES > 10 || APE < 0 || AA < 0 || ACD < 0 || ES < 0);
-
-        // Operación matemática con los pesos oficiales de la UNL
-        NF = (APE * 0.25) + (AA * 0.20) + (ACD * 0.20) + (ES * 0.35);
-
-        printf("\n📊 Nota Final Calculada: %.2f", NF);
-
-        // [ESTRUCTURA CONDICIONAL ANIDADA]: Clasificación de rendimiento
-        if (NF >= 9.0 && NF <= 10.0) {
-            printf("\n🏆 Nivel de Desempeño: EXCELENTE ✨\n");
-        } else if (NF >= 7.0 && NF < 9.0) {
-            printf("\n📈 Nivel de Desempeño: BUENO ✅\n");
-        } else if (NF >= 5.0 && NF < 7.0) {
-            printf("\n⚠️ Nivel de Desempeño: REGULAR 📝\n");
+        //Condicional
+        } while(promedio < 0 || promedio > 10 || socioeconomico < 0 || socioeconomico > 10);
+        // Proceso 
+        IP = (promedio * 0.60) + (socioeconomico * 0.40);
+        printf("\n Indice de Priorizacion Calculado: %.2f", IP);
+        // Estrucutura condicional anidada
+        //Datos de Salida y Proceso
+        if (IP >= 9.0) {
+            printf("\n Dictamen: ADJUDICADO - BECA COMPLETA (100%% Cobertura) \n");
+        } else if (IP >= 7.5 && IP < 9.0) {
+            printf("\n Dictamen: ADJUDICADO - MEDIA BECA (50%% Cobertura) \n");
+        } else if (IP >= 6.0 && IP < 7.5) {
+            printf("\n Dictamen: ADJUDICADO - AYUDA ECONOMICA (25%% Cobertura) \n");
         } else {
-            printf("\n🚨 Nivel de Desempeño: DEFICIENTE ❌\n");
+            printf("\n Dictamen: SOLICITUD RECHAZADA - No cumple con el puntaje mínimo \n");
         }
-        printf("-----------------------------------------------");
+       
     }
-
-    printf("\n🎉 ¡Proceso finalizado con éxito para los %d alumnos!\n", n);
+    printf("----------------------------------------------------------------");
+    printf("Evaluacion de asignacion finalizada para los %d estudiantes\n", n);
     return 0;
 }
+
 ```
+</details>
 
-
+---
 
 
 <p align="center">
