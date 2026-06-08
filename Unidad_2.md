@@ -3,18 +3,24 @@
 <p align="center">
   <img src="https://unl.edu.ec/sites/default/files/logogris%20copia.png" alt="Logotipo UNL" width="350">
 </p>
+<p align="center">
+📚 Glosario de contenidos</a> •
+💻 Ejercicio Práctico</a> •
+🧐 Reflexión</a>
+</p>
 
-### 🎨 1. Marco Teórico Interactivo
+---
 
-Haz clic en cada sección para desplegar los fundamentos conceptuales, pseudocódigos y la lógica estructural de esta unidad.
+### 🎨 1. Glosario interactivo de contenidos
+
+*Haz clic en cada sección para desplegar los fundamentos conceptuales, pseudocódigos y la lógica estructural de esta unidad.*
 
 <details>
-<summary><b>🔍 CLIC AQUÍ para explorar las Estructuras Condicionales (Decisiones)</b></summary>
-<blockquote>
+<summary><b>🔍 CLIC AQUÍ para explorar las Estructuras Condicionales</b></summary>
+    
+> 💡 **Definición:** Las estructuras condicionales permiten bifurcar el flujo de ejecución de un algoritmo basándose en la evaluación de una expresión lógica o booleana (Verdadero/Falso).
 
-  > 💡 **Definición:** Las estructuras condicionales permiten bifurcar el flujo de ejecución de un algoritmo basándose en la evaluación de una expresión lógica o booleana (Verdadero/Falso).
-
-#### A. Condicional Simple (`if`)
+#### 🔵A. Condicional Simple (`if`)
 Evalúa una condición. Si es verdadera, ejecuta el bloque interno; si es falsa, ignora las instrucciones y continúa de forma secuencial.
 * **Pseudocódigo:**
     ```text
@@ -27,10 +33,8 @@ Evalúa una condición. Si es verdadera, ejecuta el bloque interno; si es falsa,
 <p align="center">
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCiRvV0_cBePmzLbfgVTHWwbh_vWIJLehgoLUs1915CA3ZukkPi9jQ2SGHtUz7n9s2k_7699FuhWNrSi0_yBSCIsMpHn2Xo9r5xkn68mqC5p6Xhhr8ZDDSfWLSz4rlUSk8gEWyyi6fDrc/s1600/ordinograma_si.gif" width="650" alt="Pseudocódigo Ahorro Anual">
 </p>
-</blockquote>
-</details>
 
-#### B. Condicional Doble o Cmpuesta (`if-else`)
+#### 🟢B. Condicional Doble o Compuesta (`if-else`)
 Define un camino alternativo obligatorio. Si la condición evaluada resulta falsa, se ejecuta de manera estricta el bloque dentro de la cláusula `Sino`.
 * **Pseudocódigo:**
     ```text
@@ -44,12 +48,11 @@ Define un camino alternativo obligatorio. Si la condición evaluada resulta fals
 <p align="center">
   <img src="https://www.tutorialesprogramacionya.com/pythonya/imagentema/foto018.jpg" width="650" alt="Pseudocódigo Ahorro Anual">
 </p>
-</blockquote>
-</details>
+
     
-#### C. Condicional Múltiple por Casos (`switch`)
+#### 🔴C. Condicional Múltiple por Casos (`switch`)
 Se emplea cuando el algoritmo requiere evaluar múltiples alternativas consecutivas para una variable o expresión.
-* **Pseudocódigo (Según / Switch):**
+* **Pseudocódigo**
     ```text
     Segun variable_control Hacer
         caso_1:
@@ -60,13 +63,12 @@ Se emplea cuando el algoritmo requiere evaluar múltiples alternativas consecuti
             instrucciones_por_defecto
     FinSegun
     ```
-* **Diagrama de flujo de Switch**
+* **Diagrama de flujo**
 <p align="center">
   <img src="https://lab.anahuac.mx/~hselley/ayp/img/diagramaDeFlujo/condicionalMultiple.png" width="650" alt="Pseudocódigo Ahorro Anual">
 </p>
-</blockquote>
-</details>
-#### D. Condicionales Anidados
+
+#### 🟡D. Condicionales Anidados
 Se presentan cuando, al cumplirse o no una condición inicial, se requiere evaluar una nueva condición interna para determinar la ruta final del flujo.
 
 * **Pseudocódigo:**
@@ -84,17 +86,65 @@ Se presentan cuando, al cumplirse o no una condición inicial, se requiere evalu
     ```
 * **Diagrama de flujo**
 <p align="center">
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieiM7mQCp2g4BFcyVcB94sXR-PmmEQNUJ8wNmxIbVLtrFY9hppRuZ6HYsjwlaYLr3AqnuhvKs8zkRmZLPaA0ssCnrP7STa_CYw9q9Uxg15hXSvX9z_5iG7rZyhEHot-ym25XUlqcByCns/s1600/si3.png" width="650" alt="Pseudocódigo Ahorro Anual">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieiM7mQCp2g4BFcyVcB94sXR-PmmEQNUJ8wNmxIbVLtrFY9hppRuZ6HYsjwlaYLr3AqnuhvKs8zkRmZLPaA0ssCnrP7STa_CYw9q9Uxg15hXSvX9z_5iG7rZyhEHot-ym25XUlqcByCns/s1600/si3.png" width="650">
 </p>
-</blockquote>
 </details>
-    
-</details>
-<summary><b>🔄 CLIC AQUÍ para explorar las Estructuras Repetitivas (Sintaxis, Pseudocódigo y Diagramas)</b></summary>
+
+<details>
+<summary><b>🔄 CLIC AQUÍ para explorar las Estructuras Repetitivas</b></summary>
+
+<br>
+
 
 > 💡 **Concepto Clave:** Los bucles permiten ejecutar un bloque de instrucciones múltiples veces de forma automatizada. Se rigen bajo una condición de parada para evitar ciclos infinitos que saturen la memoria.
 
-#### 1. Bucle Mientras (`while`)
+#### A. Variables de control
+> **¿Qué son?** Son variables especiales que cambian su valor de forma progresiva dentro de un bucle. Aunque ambas realizan sumas, su propósito lógico y la forma en que incrementan son completamente diferentes.
+
+#### 🔢 Contadores 
+Un contador es una variable que incrementa o decrementa en una **cantidad constante** (generalmente de 1 en 1) en cada iteración del bucle. Se utiliza para registrar cuántas veces ocurre un evento o para controlar el número de vueltas de un ciclo.
+
+* **Sintaxis matemática:** `contador = contador + constante` (o de forma simplificada `contador++`)
+* **Pseudocódigo:**
+    ```text
+    // Inicialización antes del bucle
+    cant_estudiantes <- 0 
+    
+    // Dentro del bucle
+    cant_estudiantes <- cant_estudiantes + 1
+    ```
+
+---
+
+#### 💰 Acumuladores (o Sumadores) 
+Un acumulador es una variable que incrementa o decrementa en una **cantidad variable**. Se utiliza para agrupar o sumar valores numéricos que cambian en cada iteración, como calificaciones, precios o estaturas.
+
+* **Sintaxis matemática:** `acumulador = acumulador + variable` (o de forma simplificada `acumulador += variable`)
+* **Pseudocódigo:**
+    ```text
+    // Inicialización antes del bucle
+    suma_notas <- 0.0 
+    
+    // Dentro del bucle
+    suma_notas <- suma_notas + nota_ingresada
+    ```
+
+---
+
+### 🔍 Cuadro Comparativo de Diferencias
+
+| Criterio | Contadores 🔢 | Acumuladores 💰 |
+| :--- | :--- | :--- |
+| **Valor de incremento** | Es **fijo y constante** (ej. $+1$, $+2$, $-1$). | Es **variable y dinámico** (ej. $+nota$, $+precio$). |
+| **Propósito Principal** | Contar repeticiones o verificar límites. | Totalizar sumatorias o promedios masivos. |
+| **Inicialización típica** | Habitualmente en `0` o `1`. | Habitualmente en `0` o `0.0` (para números reales). |
+
+> [!WARNING]
+> **¡Regla de Oro en Programación!** 🚨 
+> Tanto los contadores como los acumuladores **deben inicializarse obligatoriamente** antes de que inicie el bucle. Si no se hace, la variable contendrá "basura" de la memoria y los cálculos del programa serán erróneos.
+
+
+#### 🔄1. Bucle Mientras (`while`)
 Es una estructura con **precondición**. Evalúa la condición lógica *antes* de ingresar al bucle. Si la condición es falsa desde el primer intento, el bloque de código jamás se ejecuta.
 
 * **Pseudocódigo:**
@@ -105,12 +155,15 @@ Es una estructura con **precondición**. Evalúa la condición lógica *antes* d
         // Modificación de la variable de control
     FinMientras
     ```
-* **Representación en Diagrama de Flujo (Vertical):**
+* **Diagrama de flujo**
+<p align="center">
+  <img src="https://www.tutorialesprogramacionya.com/delphiya/imagentema/foto037.jpg" width="650" alt="Pseudocódigo Ahorro Anual">
+</p>
     
 
 ---
 
-#### 2. Bucle Hacer-Mientras (`do-while`)
+#### 🔄2. Bucle Hacer-Mientras (`do-while`)
 Es una estructura con **postcondición**. Ejecuta el bloque de instrucciones **al menos una vez** y, al final, evalúa si la condición es verdadera para decidir si repite el ciclo. Es la estructura estándar para la validación perimetral de datos.
 
 * **Pseudocódigo:**
@@ -121,12 +174,16 @@ Es una estructura con **postcondición**. Ejecuta el bloque de instrucciones **a
         // Entrada o modificación de datos
     Mientras Que (condicion_logica)
     ```
-* **Representación en Diagrama de Flujo (Vertical):**
+    ```
+* **Diagrama de flujo**
+<p align="center">
+  <img src="https://www.tutorialesprogramacionya.com/javaya/imagentema/foto055.jpg" width="650" alt="Pseudocódigo Ahorro Anual">
+</p>
     
 
 ---
 
-#### 3. Bucle Para (`for`)
+#### 🔄3. Bucle Para (`for`)
 Es un ciclo determinado ideal para cuando conocemos de antemano la **cantidad exacta de iteraciones** que se deben realizar. Compacta en una sola línea la inicialización, la condición de permanencia y el incremento/decremento.
 
 * **Pseudocódigo:**
@@ -136,20 +193,13 @@ Es un ciclo determinado ideal para cuando conocemos de antemano la **cantidad ex
         instrucción_2
     FinPara
     ```
-* **Representación en Diagrama de Flujo (Vertical):**
-    
+    ```
+* **Diagrama de flujo**
+<p align="center">
+  <img src="https://www2.eii.uva.es/fund_inf/cpp/_images/for.jpg" width="650" alt="Pseudocódigo Ahorro Anual">
+</p>
 
-</details>
-
-<details>
-<summary><b>🔄 CLIC AQUÍ para explorar las Estructuras Repetitivas (Bucles)</b></summary>
-
-> ⚠️ **¡Cuidado con los bucles infinitos!** Un bucle debe tener siempre una condición de parada clara y una variable de control que se modifique en cada iteración.
-
-#### Tipos de Bucles:
-1.  **Bucle `while` (Mientras):** Evalúa la condición **antes** de entrar. Si la condición es falsa al inicio, el código jamás se ejecuta.
-2.  **Bucle `do-while` (Hacer-Mientras):** Evalúa la condición **al final**. Garantiza que el código interno se ejecute **al menos una vez**. ¡Ideal para validaciones de datos!
-3.  **Bucle `for` (Para):** Diseñado para cuando sabemos *exactamente* cuántas vueltas dará el ciclo. Agrupa inicialización, condición e incremento en una sola línea.
+  > ⚠️ **¡Cuidado con los bucles infinitos!** Un bucle debe tener siempre una condición de parada clara y una variable de control que se modifique en cada iteración.
 
 </details>
 
