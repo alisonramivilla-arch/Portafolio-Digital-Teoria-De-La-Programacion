@@ -236,7 +236,7 @@ La Universidad Nacional de Loja requiere un programa interactivo en lenguaje C p
 #### 🗺️ C. Diseño del Algoritmo (Diagramación Vertical)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Gemini_Generated_Image_uho5jjuho5jjuho5.png" width="650" alt="Pseudocódigo Ahorro Anual">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/DIAGRAMA%20DE%20FLUJO....png" width="650" alt="Pseudocódigo Ahorro Anual">
 </p>
 
 ---
@@ -290,12 +290,45 @@ int main() {
     printf("Evaluacion de asignacion finalizada para los %d estudiantes\n", n);
     return 0;
 }
-
 ```
 </details>
 
 ---
 
+### 📈 4. Dificultades Encontradas 
+
+<details>
+<summary><b>💻 CLIC AQUÍ para explorar DIFICULTADES</b></summary>
+</p>
+
+#### ⚠️ A. Principales Obstáculos en el Aprendizaje
+
+> [!CAUTION]
+> Durante el desarrollo teórico y práctico de esta Unidad 2, se presentaron los siguientes desafíos técnico-cognitivos en el diseño de algoritmos:
+
+* **Criterio de Selección de Estructuras:** Identificar con precisión matemática **cuándo aplicar una estructura condicional específica o una repetitiva** ante un problema abierto constituía un reto inicial complejo. Discernir si un escenario requería una escalera de `else if` o si era optimizable mediante un control por casos (`switch`), o evaluar la frontera entre un ciclo condicionado o secuencial, generaba confusión en la etapa de abstracción y modelado.
+* **Dominio Coherente del Bucle `for`:** Comprender la sincronización interna del ciclo determinado `for` (su inicialización, la condición lógica de frontera y el incremento automático en una sola línea de control) requirió romper con la estructura lineal secuencial a la que venía acostumbrada en la Unidad 1. Visualizar de forma síncrona cómo el contador altera el flujo en cada ciclo demandó un cambio drástico en la lógica mental.
+* **Sincronización e Inicialización de Variables:** Determinar el momento exacto y el ámbito (*scope*) de memoria donde se debe **inicializar una variable** (como poner los contadores en `1` o limpiar los acumuladores de sumas masivas en `0.0` antes de abrir las compuertas de un bucle) fue una dificultad persistente. Olvidar este paso causaba que el compilador arrastrara "valores basura" de la memoria RAM, alterando los resultados lógicos en las pruebas de escritorio.
+</details>
+
+---
+
+### 🧠 5. Reflexión Crítica 
+
+<details>
+<summary><b>💻 CLIC AQUÍ para explorar REFLEXIÓN CRÍTICA</b></summary>
+</p>
+  
+> [!IMPORTANT]
+ ### 📑 Análisis Metacognitivo del Desarrollo Lógico
+
+ El paso del paradigma puramente secuencial abordado en la Unidad 1 hacia el control de flujos dinámicos en esta Unidad 2 representa el verdadero nacimiento del pensamiento computacional y la ingeniería de software en mi formación. Estudiar las estructuras condicionales y repetitivas no se limitó a aprender reglas sintácticas en lenguaje C, sino a comprender cómo administrar el recurso más valioso de una computadora: **el tiempo de procesamiento de la CPU**.
+
+ Al analizar retrospectivamente mi evolución, identifico un cambio cualitativo en la forma de resolver problemas. Al inicio de la unidad, mi enfoque metodológico era puramente reactivo; escribía líneas de código consecutivas esperando que la lógica se alineara por sí sola. Esto causaba fallos críticos como bucles infinitos por falta de variables de control o el acarreo de "datos basura" por una incorrecta inicialización en la memoria RAM.
+ 
+ La introducción de herramientas rigurosas como las **Pruebas de Escritorio detalladas** y la **Diagramación Vertical** en Draw.io transformó mi perspectiva. Diseñar visualmente el filtro perimetral de un ciclo `do-while` o pulir las condiciones lógicas de una cascada de selección me obligó a actuar como el propio compilador. Aprendí que la elegancia de un algoritmo no radica en su extensión, sino en su optimización; por ejemplo, preferir una escalera estructurada de `else if` que aproveche el "cortocircuito lógico" del procesador en lugar de evaluaciones concurrentes aisladas.
+
+En conclusión, esta unidad marca un hito en mi aprendizaje. He dejado de ver al código como un conjunto de instrucciones rígidas y he comenzado a entenderlo como una arquitectura maleable orientada a la eficiencia. La comprensión del anidamiento complejo, el control estricto de variables mutables (contadores y acumuladores) y la validación proactiva de datos me brindan las competencias lógicas necesarias para afrontar los desafíos algorítmicos avanzados que demandará el resto de mi carrera en Ciencias de la Computación.
 
 <p align="center">
 **<strong><a href="Portafolio.md">**INICIO**</a></strong>**
