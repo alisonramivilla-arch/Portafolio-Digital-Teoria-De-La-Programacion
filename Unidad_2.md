@@ -207,8 +207,9 @@ Es un ciclo determinado ideal para cuando conocemos de antemano la **cantidad ex
 
 <details>
 <summary><b>💻 CLIC AQUÍ para explorar el caso práctico</b></summary>
-
-####Sistema de Evaluación de Becas Académicas
+</p>
+  
+> 💡Sistema de Evaluación de Becas Académicas
   
 #### 📝 A. Planteamiento del Problema
 La Universidad Nacional de Loja requiere un programa interactivo en lenguaje C para evaluar las solicitudes de un grupo de "n" estudiantes que postulan a las *Becas de Excelencia Académica y Apoyo Socioeconómico*. El algoritmo debe registrar de forma iterativa el promedio global del ciclo anterior del estudiante y su puntaje de vulnerabilidad socioeconómica (en una escala de 0 a 10). Se debe aplicar una **validación perimetral rigurosa** para asegurar que los datos no estén fuera de rango, calcular un índice de priorización y determinar el porcentaje de cobertura de beca adjudicado mediante una escalera condicional de toma de decisiones.
@@ -234,7 +235,9 @@ La Universidad Nacional de Loja requiere un programa interactivo en lenguaje C p
 
 #### 🗺️ C. Diseño del Algoritmo (Diagramación Vertical)
 
-*(Aquí puedes insertar la captura del diagrama de flujo de este ejercicio generado en PSeInt)*
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Gemini_Generated_Image_uho5jjuho5jjuho5.png" width="650" alt="Pseudocódigo Ahorro Anual">
+</p>
 
 ---
 
