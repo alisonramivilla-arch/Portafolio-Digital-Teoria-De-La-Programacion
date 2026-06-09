@@ -329,6 +329,7 @@ int main() {
  La introducción de herramientas rigurosas como las **Pruebas de Escritorio detalladas** y la **Diagramación Vertical** en Draw.io transformó mi perspectiva. Diseñar visualmente el filtro perimetral de un ciclo `do-while` o pulir las condiciones lógicas de una cascada de selección me obligó a actuar como el propio compilador. Aprendí que la elegancia de un algoritmo no radica en su extensión, sino en su optimización; por ejemplo, preferir una escalera estructurada de `else if` que aproveche el "cortocircuito lógico" del procesador en lugar de evaluaciones concurrentes aisladas.
 
 En conclusión, esta unidad marca un hito en mi aprendizaje. He dejado de ver al código como un conjunto de instrucciones rígidas y he comenzado a entenderlo como una arquitectura maleable orientada a la eficiencia. La comprensión del anidamiento complejo, el control estricto de variables mutables (contadores y acumuladores) y la validación proactiva de datos me brindan las competencias lógicas necesarias para afrontar los desafíos algorítmicos avanzados que demandará el resto de mi carrera en Ciencias de la Computación.
+</details>
 
 <p align="center">
 **<strong><a href="Portafolio.md">**INICIO**</a></strong>**
