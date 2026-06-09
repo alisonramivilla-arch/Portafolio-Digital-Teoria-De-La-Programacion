@@ -205,6 +205,8 @@ Es un ciclo determinado ideal para cuando conocemos de antemano la **cantidad ex
 
 ### 💻 2. Ejercicio Practico Alternativo
 
+*Haz clic en cada sección para desplegar los fundamentos conceptuales, pseudocódigos y la lógica estructural de esta unidad.*
+
 <details>
 <summary><b>💻 CLIC AQUÍ para explorar el caso práctico</b></summary>
 </p>
@@ -297,6 +299,8 @@ int main() {
 
 ### 📈 4. Dificultades Encontradas 
 
+*Haz clic en cada sección para desplegar los fundamentos conceptuales, pseudocódigos y la lógica estructural de esta unidad.*
+
 <details>
 <summary><b>💻 CLIC AQUÍ para explorar DIFICULTADES</b></summary>
 </p>
@@ -314,6 +318,8 @@ int main() {
 ---
 
 ### 🧠 5. Reflexión Crítica 
+
+*Haz clic en cada sección para desplegar los fundamentos conceptuales, pseudocódigos y la lógica estructural de esta unidad.*
 
 <details>
 <summary><b>💻 CLIC AQUÍ para explorar REFLEXIÓN CRÍTICA</b></summary>
