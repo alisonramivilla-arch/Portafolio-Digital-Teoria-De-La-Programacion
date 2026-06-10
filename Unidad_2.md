@@ -293,6 +293,20 @@ int main() {
     return 0;
 }
 ```
+
+  ### 🖥️ F. Resultado en Terminal
+A continuación, se muestra la evidencia de la compilación y ejecución exitosa del algoritmo en la terminal de Windows, utilizando los comandos `gcc` para generar el ejecutable y `.\` para correr el programa:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/terminal%20u2.png">
+</p>
+
+  ### 🔍 G. Prueba de escritorio
+  
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/PRUEBA%20DE%20ESCRITORIO%20U2.png" width="700" alt="Resultado Terminal Distancia">
+</p>
+
 </details>
 
 ---
