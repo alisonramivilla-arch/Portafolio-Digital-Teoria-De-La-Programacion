@@ -31,8 +31,12 @@ Este portafolio digital es un espacio de compilación académica donde se regist
 
 <details>
 <summary><b>📂 Unidad 2: Estructuras Algorítmicas de Control </b></summary>
+  
+### Temas y Evidencias
 
-*Contenido en desarrollo conforme avance el periodo académico.*
+* **Control de Flujo Avanzado:** Implementación de bifurcaciones lógicas (`if-else`, `switch`) y estructuras iterativas (`for`, `while`, `do-while`) para romper la linealidad algorítmica.
+* **Validación Perimetral de Datos:** Diseño de filtros interactivos robustos que bloquean y aíslan de forma proactiva el ingreso de variables fuera de rango.
+* **Optimización y Gestión de Memoria:** Control técnico del ámbito (*scope*) de variables mediante el uso estratégico de contadores, acumuladores e inicializaciones limpias en RAM.
 
   [![Visulizar Unidad 2](https://img.shields.io/badge/ACCEDER%20A%20LA%20UNIDAD_2-CLICK%20AQUÍ-7434eb?style=for-the-badge&logo=rocket&logoColor=white)](./Unidad_2.md)
 
