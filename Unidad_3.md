@@ -142,7 +142,26 @@ void duplicar(int *numero){
     *numero = *numero * 2;
 }
 ```
+### 📌 Ejemplo Práctico
+```c
+#include <stdio.h>
+void intercambiarValores(int *a, int *b){
+    int c;
+    c=*a;
+    *a=*b;
+    *b=c;
+    printf("El valor de a es: %i\n", *a);
+    printf("El valor de b es: %i\n", *b);
+}
+int main (){
+    int x =5, y =7;
+    intercambiarValores(&x,&y);
+    printf("El valor de x es: %i\n", x);
+    printf("El valor de y es: %i\n", y);
+    return 0;
+}
 
+```
 ---
 
 > 💡 **Dato curioso**
@@ -201,30 +220,83 @@ Es una colección de datos organizada en una sola dimensión.
 int edades[5]={18,20,19,22,21};
 ```
 
+### 📌 Ejemplo Práctico
+
+```c
+#include <stdio.h>
+int main(){
+    int lista[5], i;
+    for(i=0; i<5; i++){
+        printf("Ingrese el valor de posicion %i\n", i);
+        scanf("%i", &lista[i]);
+
+    }
+    for(i=0; i<5 ; i++ ){
+        printf("posicion %i = %i\n", i, lista[i]);
+    }
+
+    return 0;
+}
+```
 ---
 
 # 🔹 Arreglo Bidimensional (Matriz)
 
 Organiza los datos en filas y columnas.
 
-```text
-      Col
+<p align="center">
+  <img src="https://www.programandojava.com/images/ArregloInt2x3Vacio.png" alt="Logotipo UNL" width="350">
+</p>
 
-      0   1   2
-
-Fila
-
-0    12  15  20
-
-1    10  18  25
-
-2    30  22  14
-```
 
 ### 💻 Ejemplo
 
 ```c
 int matriz[3][3];
+```
+
+### 📌 Ejemplo Práctico
+
+```c
+int main () {
+    // Matriz 
+    int matrizA[2][3], matrizC[2][3];
+    int matrizB[2][3], i, j,pq;
+
+    // Datos de entrada
+    for(i = 0; i < 2; i++){        
+        for(j = 0; j < 3; j++){    
+            printf("Ingrese el valor de posicion [%i][%i] de la Matriz A\n", i, j);
+            scanf("%i", &matrizA[i][j]);
+        }
+    
+    }
+    printf("---------------------------------\n");
+      for(i = 0; i < 2; i++){        
+        for(j = 0; j < 3; j++){    
+            printf("Ingrese el valor de posicion [%i][%i] de la Matriz B\n", i, j);
+            scanf("%i", &matrizB[i][j]);
+        }
+    }
+    
+    printf("----------------------------------------------------------\n");
+    // Datos de salida 
+    for(i = 0; i < 2; i++){
+        for(j = 0; j < 3; j++){
+            printf("MATRIZ A posicion [%i][%i] = %i\n", i, j, matrizA[i][j]);
+           
+        }
+    }
+    printf("----------------------------------------------------------\n");
+    for(i = 0; i < 2; i++){
+        for(j = 0; j < 3; j++){
+            printf("MATRIZ B posicion [%i][%i] = %i\n", i, j, matrizB[i][j]);
+           
+        }
+    }
+    
+    return 0;
+}
 ```
 
 ---
@@ -235,10 +307,44 @@ Permite representar información con tres o más dimensiones.
 
 Es utilizado en gráficos 3D, videojuegos, simulaciones científicas y procesamiento de imágenes.
 
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:1400/1*VbVvxuuT7L2k-imWZKNp8w.png" alt="Logotipo UNL" width="350">
+</p>
+
 ```text
 matriz[x][y][z]
 ```
+### 📌 Ejemplo Práctico
+```c
+    int main(){
+    //matrices
+    int matriz[2][2][3];
+    //Datos de entrada
+    int i,j,k;
 
+    for(i = 0; i < 2; i ++){
+        for(j = 0; j < 2; j ++){
+            for (k = 0; k < 3; k ++){
+            printf("Ingrese el valor para:[%i] [%i] [%i]: \n", i, j,k);
+            scanf("%i", &matriz[i][j][k]);
+            }
+        }
+    }
+
+    //Datos de salida
+    for(i = 0; i < 2; i ++){
+        for(j = 0; j < 2; j ++){
+            for(k = 0; k < 3; k ++){
+            printf("[%i]", matriz[i][j][k]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+
+    }
+        return 0;
+    }
+```
 ---
 
 ## 🌍 Aplicaciones
