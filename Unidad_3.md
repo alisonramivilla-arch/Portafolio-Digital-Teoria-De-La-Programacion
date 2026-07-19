@@ -29,37 +29,35 @@ En lugar de escribir todo el código dentro de la función `main()`, el programa
 
 ---
 
-## 🎯 Ventajas
-
-✅ Código más organizado.
-
-✅ Mayor facilidad para detectar errores.
-
-✅ Reutilización de funciones.
-
-✅ Mejor trabajo colaborativo.
-
-✅ Programas más fáciles de mantener.
+#### 📈 Ventajas de la Modularización
+* **Reutilización de Código:** Evita la redundancia al escribir un bloque lógico una sola vez y permitir su invocación infinitas veces desde cualquier sección del software.
+* **Fácil Depuración y Mantenimiento:** Facilita el aislamiento de errores (bugs). Si un cálculo falla, se corrige directamente el módulo afectado sin alterar el resto de la arquitectura del programa.
 
 ---
 
-## 🧩 Estructura general
-
-```text
-            main()
-
-        /      |      \
-
- Función1  Función2  Función3
-
-      \        |        /
-
-      Resultado Final
-```
+#### 🧩 Anatomía de una Función en C
+Toda función consta de tres componentes esenciales e interconectados:
+1. **Cabecera (Header):** Define el tipo de dato de retorno, el identificador de la función y la lista de parámetros formales con sus respectivos tipos (ej. `float calcularPromedio(int nota1, int nota2)`).
+2. **Cuerpo (Body):** Bloque de código delimitado por llaves `{ }` donde se ejecutan las operaciones e instrucciones algorítmicas locales.
+3. **Retorno (Return):** Sentencia implícita u explícita (`return expresión;`) que envía el resultado calculado de vuelta al módulo invocador y finaliza la ejecución de la función. En procedimientos sin retorno se utiliza el tipo de dato `void`.
 
 ---
 
-# 📌 Pase de Parámetros
+## 🧩 Estructura general de una función en C++
+
+<p align="center">
+  <img src="https://sensoricx.com/wp-content/uploads/2022/07/funciones.png" alt="Logotipo UNL" width="350">
+</p>
+
+---
+
+## 📊 Estructura general de la modularidad
+
+<p align="center">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUI5g8euGSEZsDNJiYSQwpAelALiqrhBYzoHoRprA0muXsbCI-lW3RQLFY8cFbmhPHnM1Wn6xehHUE07xzCeVDhMm8UItF4aJuVyhWvsVyajj8UMMmxHXMpKmsqx3YIJSXd5PpD1kJ5AY/s1600/slide_6.jpg" alt="Logotipo UNL" width="350">
+</p>
+
+# 🎯 Transmisión de Parámetros
 
 Cuando una función necesita trabajar con información externa, se utilizan **parámetros**.
 
