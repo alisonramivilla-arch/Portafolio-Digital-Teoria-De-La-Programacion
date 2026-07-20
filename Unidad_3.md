@@ -202,17 +202,10 @@ Cada elemento ocupa una posición consecutiva en memoria y puede accederse media
 
 Es una colección de datos organizada en una sola dimensión.
 
-```text
-Índice
+<p align="center">
+  <img src="https://prog-o-manuais-plantillas-daw-bed5b048cbcd5bc455e9794fac9da239d.pages.iessanclemente.net/arrays/arraysuni/array.png" alt="Logotipo UNL" width="350">
+</p>
 
-0    1    2    3    4
-
-┌───┬───┬───┬───┬───┐
-
-│10 │25 │18 │40 │50 │
-
-└───┴───┴───┴───┴───┘
-```
 
 ### 💻 Ejemplo
 
