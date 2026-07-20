@@ -416,8 +416,3 @@ Considero que esta unidad representa un paso importante en mi formación como fu
 </p>
 
 
-
-
-<p align="center">
-**<strong><a href="Portafolio.md">**INICIO**</a></strong>**
-</p>
