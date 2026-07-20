@@ -45,7 +45,13 @@ Este portafolio digital es un espacio de compilación académica donde se regist
 <details>
 <summary><b>📂 Unidad 3: Programación Modular y Estructuras de Datos Estáticos</b></summary>
 
-*Contenido en desarrollo conforme avance el periodo académico.*
+#### Temas y Evidencias
+* **Modularidad y Modularización:** Descomposición de problemas complejos en subprogramas independientes (funciones y procedimientos) para maximizar la reutilización de código, el encapsulamiento y la mantenibilidad.
+* **Mecanismos de Transmisión de Parámetros:** Implementación y análisis comparativo del paso de parámetros **por valor** (copia local en memoria) y **por referencia/dirección** (manipulación directa de punteros o direcciones de memoria) para la alteración segura de estados.
+* **Estructuras de Datos Homogéneas (Arreglos):** 
+    * **Arreglos Unidimensionales (Vectores):** Gestión secuencial y direccionamiento lineal de colecciones indexadas de datos en memoria contigua.
+    * **Arreglos Bidimensionales (Matrices):** Organización tabular de datos mediante indexación de filas y columnas para la representación de sistemas de ecuaciones o mallas espaciales.
+    * **Arreglos Multidimensionales:** Diseño y manipulación de tensores y estructuras complejas de $N$ dimensiones para el modelado avanzado de datos.
 
   [![Visulizar Unidad 3](https://img.shields.io/badge/ACCEDER%20A%20LA%20UNIDAD_3-CLICK%20AQUÍ-7434eb?style=for-the-badge&logo=rocket&logoColor=white)](./Unidad_3.md)
 
@@ -66,7 +72,14 @@ Para el desarrollo de este portafolio y las prácticas de clase, se utilizan her
 
 
 ## 🏁 Conclusiones Generales
-> *Esta sección se encuentra actualmente en desarrollo y se completará al finalizar el ciclo académico.*
+El progreso a lo largo de este periodo académico consolida los pilares fundamentales del desarrollo de software y la ingeniería de sistemas. La evolución desde la resolución de problemas mediante algoritmos secuenciales sencillos hasta la implementación de estructuras de datos estáticas complejas demuestra una maduración en la capacidad de abstracción y lógica computacional.
+
+### 💡 Importancia de los Ejes Temáticos en la Carrera de Computación
+
+* **Fundamentos del Pensamiento Lógico (Unidad 1):** La transición del pseudocódigo a la sintaxis nativa y la compilación manual mediante GCC sientan las bases operativas indispensables. Aprender a estructurar flujos secuenciales y comprender cómo interactúa el código con la terminal es el primer paso crítico para dominar entornos de bajo nivel y sistemas operativos.
+* **Robustez y Arquitectura de Software (Unidad 2):** El control de flujo avanzado mediante estructuras selectivas e iterativas, junto con la validación perimetral de datos, define la diferencia entre un script funcional y un software de nivel de ingeniería. Diseñar filtros interactivos que bloqueen proactivamente datos inválidos garantiza la estabilidad, la seguridad informática y la tolerancia a fallos en sistemas reales.
+* **Eficiencia y Optimización de Recursos (Unidades 2 y 3):** La gestión técnica del *scope* de las variables, el control de acumuladores y la diferenciación crítica entre la transmisión de parámetros por valor y por referencia representan el núcleo de la optimización en RAM. En la computación de alto rendimiento, entender cómo se manipulan físicamente las direcciones de memoria es vital para construir software rápido y eficiente.
+* **Modelado de Datos Estructurados (Unidad 3):** La modularización de código descompone problemas masivos en subprogramas escalables y mantenibles. Al combinar esto con el direccionamiento lineal y tabular de arreglos unidimensionales, bidimensionales y multidimensionales, se adquiere la capacidad matemática y lógica para procesar matrices, mallas espaciales y tensores, herramientas que fundamentan áreas avanzadas como los gráficos por computadora, la simulación numérica y la computación científica.
 
 ---
 
