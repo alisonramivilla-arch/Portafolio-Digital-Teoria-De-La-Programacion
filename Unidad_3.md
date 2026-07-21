@@ -363,6 +363,124 @@ matriz[x][y][z]
 </details>
 
 ---
+<summary><b>📚 CLIC AQUÍ para explorar el Ejercicio Práctico</b></summary>
+
+# Sistema Bancario en C - Modularidad y Paso de Parámetros
+
+## Planteamiento del Problema
+
+Se requiere desarrollar un programa modular en el lenguaje de programación C que permita gestionar y actualizar el saldo de una cuenta bancaria digital. El sistema debe cumplir con los siguientes requerimientos:
+
+1. **Modularidad:** El código debe estar dividido en funciones independientes para organizar la lógica del programa (por ejemplo, mostrar el menú, realizar un depósito y realizar un retiro).
+2. **Paso por Valor:** Se debe utilizar para enviar datos que solo necesitan ser leídos o mostrados por la función (como mostrar el saldo actual o validar montos informativos), sin que la función tenga la capacidad de alterar la variable original del programa principal.
+3. **Paso por Referencia:** Se debe utilizar (mediante el uso de punteros) cuando una función necesite modificar directamente el valor de una variable original en la memoria del programa principal (como actualizar el saldo tras un depósito o un retiro).
+
+---
+
+## Análisis del Problema
+
+* **Entradas:**
+  * Opción del menú seleccionada por el usuario (entero).
+  * Monto de dinero a depositar (número con decimales, tipo `float`).
+  * Monto de dinero a retirar (número con decimales, tipo `float`).
+
+* **Salidas:**
+  * Mensajes informativos en consola y el saldo actual de la cuenta actualizado de forma persistente a lo largo de las operaciones.
+
+* **Identificación del Paso de Parámetros:**
+  * **Paso por valor:** Se usará en funciones como `mostrarMenu()` o al validar si un monto es positivo, donde solo se requiere consultar el valor recibido sin modificarlo.
+  * **Paso por referencia:** Se usará en las funciones `depositarDinero` y `retirarDinero`, recibiendo la dirección de memoria de la variable `saldo` (usando `float *saldo`) para modificar su contenido de manera efectiva en la función `main`.
+
+---
+
+## Código Fuente en C
+
+```c
+#include <stdio.h>
+
+// Prototipos de funciones (Modularidad)
+void mostrarMenu();
+void depositarDinero(float *saldo, float monto);
+int retirarDinero(float *saldo, float monto);
+
+int main() {
+    float saldoActual = 500.00; // Saldo inicial de la cuenta
+    int opcion;
+    float cantidad;
+
+    do {
+        mostrarMenu();
+        printf("Seleccione una opcion: ");
+        scanf("%d", &opcion);
+
+        switch (opcion) {
+            case 1:
+                printf("\nSu saldo actual es: $%.2f\n", saldoActual);
+                break;
+            case 2:
+                printf("Ingrese la cantidad a depositar: $");
+                scanf("%f", &cantidad);
+                
+                if (cantidad > 0) {
+                    // Paso por referencia: se envia la direccion de saldoActual
+                    depositarDinero(&saldoActual, cantidad);
+                    printf("Deposito exitoso. Nuevo saldo: $%.2f\n", saldoActual);
+                } else {
+                    printf("Error: El monto debe ser mayor a cero.\n");
+                }
+                break;
+            case 3:
+                printf("Ingrese la cantidad a retirar: $");
+                scanf("%f", &cantidad);
+                
+                if (cantidad > 0) {
+                    // Paso por referencia: se envia la direccion de saldoActual
+                    if (retirarDinero(&saldoActual, cantidad)) {
+                        printf("Retiro exitoso. Nuevo saldo: $%.2f\n", saldoActual);
+                    } else {
+                        printf("Error: Fondos insuficientes.\n");
+                    }
+                } else {
+                    printf("Error: El monto debe ser mayor a cero.\n");
+                }
+                break;
+            case 4:
+                printf("\nSaliendo del sistema. Gracias por preferirnos.\n");
+                break;
+            default:
+                printf("\nOpcion invalida. Intente de nuevo.\n");
+        }
+        printf("\n----------------------------------------\n");
+    } while (opcion != 4);
+
+    return 0;
+}
+
+// Funcion que utiliza paso por valor implicito al desplegar opciones estaticas
+void mostrarMenu() {
+    printf("\n=== SISTEMA BANCARIO ===\n");
+    printf("1. Consultar saldo\n");
+    printf("2. Depositar dinero\n");
+    printf("3. Retirar dinero\n");
+    printf("4. Salir\n");
+}
+
+// Funcion con paso por referencia (*saldo) y paso por valor (monto)
+void depositarDinero(float *saldo, float monto) {
+    *saldo += monto; // Modifica el valor original en memoria
+}
+
+// Funcion con paso por referencia (*saldo) y paso por valor (monto)
+int retirarDinero(float *saldo, float monto) {
+    if (*saldo >= monto) {
+        *saldo -= monto; // Modifica el valor original en memoria
+        return 1; // Retiro exitoso
+    }
+    return 0; // Fondos insuficientes
+}
+```
+
+</details>
 
 # 📈 4. Principales Dificultades Encontradas
 
