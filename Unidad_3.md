@@ -363,7 +363,12 @@ matriz[x][y][z]
 </details>
 
 ---
-<summary><b>📚 CLIC AQUÍ para explorar el Ejercicio Práctico</b></summary>
+
+<details>
+
+<summary><b>⚠️ CLIC AQUÍ para explorar Ejercicio Práctico</b></summary>
+
+---
 
 # Sistema Bancario en C - Modularidad y Paso de Parámetros
 
@@ -481,6 +486,8 @@ int retirarDinero(float *saldo, float monto) {
 ```
 
 </details>
+
+---
 
 # 📈 4. Principales Dificultades Encontradas
 
