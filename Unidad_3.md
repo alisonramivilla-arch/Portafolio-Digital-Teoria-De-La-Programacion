@@ -57,19 +57,108 @@ Toda función consta de tres componentes esenciales e interconectados:
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUI5g8euGSEZsDNJiYSQwpAelALiqrhBYzoHoRprA0muXsbCI-lW3RQLFY8cFbmhPHnM1Wn6xehHUE07xzCeVDhMm8UItF4aJuVyhWvsVyajj8UMMmxHXMpKmsqx3YIJSXd5PpD1kJ5AY/s1600/slide_6.jpg" alt="Logotipo UNL" width="350">
 </p>
 
-# 🎯 Transmisión de Parámetros
+## 📌 Ejemplo aplicado
 
-Cuando una función necesita trabajar con información externa, se utilizan **parámetros**.
+```c
+#include <stdio.h>
 
-Existen dos formas principales de pasar parámetros:
+void mostrarMenu();
+float depositar(float saldo, float cantidad);
+float retirar(float saldo, float cantidad);
+void consultarSaldo(float saldo);
+
+int main() {
+    int opcion;
+    float saldo = 1000.0f;
+    float cantidad;
+
+    do {
+        mostrarMenu();
+        if (scanf("%d", &opcion) != 1) {
+            break;
+        }
+
+        switch (opcion) {
+            case 1:
+                printf("Ingrese cantidad a depositar: ");
+                scanf("%f", &cantidad);
+                saldo = depositar(saldo, cantidad);
+                break;
+            case 2:
+                printf("Ingrese cantidad a retirar: ");
+                scanf("%f", &cantidad);
+                saldo = retirar(saldo, cantidad);
+                break;
+            case 3:
+                consultarSaldo(saldo);
+                break;
+            case 4:
+                printf("Saliendo...\n");
+                break;
+            default:
+                printf("Opcion invalida.\n");
+        }
+    } while (opcion != 4);
+
+    return 0;
+}
+
+void mostrarMenu() {
+    printf("\n--- BANCO MODULAR ---\n");
+    printf("1. Depositar\n");
+    printf("2. Retirar\n");
+    printf("3. Consultar saldo\n");
+    printf("4. Salir\n");
+    printf("Elija una opcion: ");
+}
+
+float depositar(float saldo, float cantidad) {
+    if (cantidad > 0) {
+        saldo += cantidad;
+        printf("Deposito exitoso. Nuevo saldo: %.2f\n", saldo);
+    } else {
+        printf("Cantidad invalida.\n");
+    }
+    return saldo;
+}
+
+float retirar(float saldo, float cantidad) {
+    if (cantidad > 0 && cantidad <= saldo) {
+        saldo -= cantidad;
+        printf("Retiro exitoso. Nuevo saldo: %.2f\n", saldo);
+    } else {
+        printf("Fondos insuficientes o cantidad invalida.\n");
+    }
+    return saldo;
+}
+
+void consultarSaldo(float saldo) {
+    printf("Saldo actual: %.2f\n", saldo);
+}
+
+```
+
+# 🎯 Paso de Parámetros
+
+El **paso de parámetros** es el mecanismo mediante el cual un programa principal o una función envía datos (*argumentos*) a otra función para que esta pueda procesarlos y ejecutar su tarea. Los valores que recibe la función en su definición se denominan *parámetros*.
+
+## Características Principales
+
+* **Comunicación y Modularidad:** Permite la reutilización de código al enviar diferentes entradas a una misma función para obtener resultados adaptados a cada caso.
+* **Ámbito Local:** Por defecto, los parámetros actúan como variables locales dentro de la función receptora, existiendo únicamente mientras la función está en ejecución.
+* **Mecanismos de Transferecia:** Dependiendo del lenguaje de programación y de la necesidad del algoritmo, los parámetros se pueden transferir principalmente de dos formas: **por valor** (copiando el dato) o **por referencia** (compartiendo la dirección de memoria).
 
 ---
 
 ## 🔹 Paso por Valor
 
-En este método la función recibe **una copia** del dato original.
+El **paso de parámetros por valor** es un mecanismo de comunicación con funciones donde se realiza una **copia exacta del valor** de la variable original y se le asigna al parámetro local de la función receptora. 
 
-Los cambios realizados dentro de la función **NO modifican** la variable original.
+## Características Principales
+
+* **Independencia de Variables:** Como la función trabaja con una copia ubicada en otra dirección de memoria, cualquier modificación que sufra el parámetro dentro de la función **no afecta** a la variable original del código que la llamó.
+* **Seguridad de Datos:** Previene efectos secundarios accidentales (*side effects*), ya que el estado original de la variable permanece intacto fuera del ámbito de la función.
+* **Consumo de Memoria y Rendimiento:** Para tipos de datos primitivos es muy eficiente; sin embargo, al tratarse de estructuras grandes (como arreglos o estructuras complejas), copiar todo el contenido puede disminuir el rendimiento.
 
 ### 📊 Esquema
 
@@ -98,8 +187,23 @@ numero sigue valiendo 10
 ### 💻 Ejemplo
 
 ```c
-void duplicar(int numero){
-    numero = numero * 2;
+#include <stdio.h>
+
+void modificarValor(int x);
+
+int main() {
+    int numero = 10;
+
+    printf("Antes de la funcion: numero = %d\n", numero);
+    modificarValor(numero);
+    printf("Despues de la funcion: numero = %d\n", numero);
+
+    return 0;
+}
+
+void modificarValor(int x) {
+    x = 20;
+    printf("Dentro de la funcion: x = %d\n", x);
 }
 ```
 
@@ -107,9 +211,7 @@ void duplicar(int numero){
 
 ## 🔸 Paso por Referencia
 
-En este método la función recibe la **dirección de memoria** de la variable utilizando punteros.
-
-Los cambios realizados dentro de la función **sí modifican** la variable original.
+El paso por referencia en **C** se simula explícitamente utilizando **punteros** para pasar la dirección de memoria de la variable original a la función. Esto permite que la función llamada acceda y modifique directamente el valor almacenado en esa dirección. Como resultado, los cambios realizados en los parámetros sí persisten fuera de la función, afectando a las variables originales.
 
 ### 📊 Esquema
 
@@ -135,30 +237,51 @@ Función(&numero)
 numero ahora vale 20
 ```
 
-### 💻 Ejemplo
+### 💻 Ejemplo aplicado
 
 ```c
-void duplicar(int *numero){
-    *numero = *numero * 2;
+#include <stdio.h>
+
+void modificarPorReferencia(int *x);
+
+int main() {
+    int numero = 10;
+
+    printf("Antes de la funcion: numero = %d\n", numero);
+    modificarPorReferencia(&numero);
+    printf("Despues de la funcion: numero = %d\n", numero);
+
+    return 0;
+}
+
+void modificarPorReferencia(int *x) {
+    *x = 20;
+    printf("Dentro de la funcion (*x): x = %d\n", *x);
 }
 ```
-### 📌 Ejemplo Práctico
+---
+
+### 📌 Ejemplo aplicado de ambos conceptos
 ```c
 #include <stdio.h>
-void intercambiarValores(int *a, int *b){
-    int c;
-    c=*a;
-    *a=*b;
-    *b=c;
-    printf("El valor de a es: %i\n", *a);
-    printf("El valor de b es: %i\n", *b);
-}
-int main (){
-    int x =5, y =7;
-    intercambiarValores(&x,&y);
-    printf("El valor de x es: %i\n", x);
-    printf("El valor de y es: %i\n", y);
+
+void operar(int valor, int *referencia);
+
+int main() {
+    int a = 5;
+    int b = 10;
+
+    printf("Antes - a (por valor): %d, b (por referencia): %d\n", a, b);
+    operar(a, &b);
+    printf("Despues - a (por valor): %d, b (por referencia): %d\n", a, b);
+
     return 0;
+}
+
+void operar(int valor, int *referencia) {
+    valor = valor * 2;
+    *referencia = *referencia * 2;
+    printf("Dentro - valor modificado localmente: %d, referencia modificada en memoria: %d\n", valor, *referencia);
 }
 
 ```
@@ -200,7 +323,13 @@ Cada elemento ocupa una posición consecutiva en memoria y puede accederse media
 
 # 🔹 Arreglo Unidimensional (Vector)
 
-Es una colección de datos organizada en una sola dimensión.
+Un **arreglo unidimensional** (también llamado vector) es una estructura de datos estática que almacena una **colección finita, homogénea y ordenada** de elementos. Esto significa que todos los elementos ocupan posiciones consecutivas en la memoria RAM y pertenecen al mismo tipo de dato (por ejemplo, enteros, flotantes, caracteres).
+
+## Características Principales
+
+* **Homogeneidad:** Todos los elementos del arreglo comparten exactamente el mismo tipo de dato.
+* **Secuencialidad:** Los elementos se almacenan en bloques de memoria contiguos.
+* **Indexación:** Cada posición del arreglo se identifica mediante un **índice** numérico (que comúnmente empieza desde `0` en la mayoría de lenguajes de programación modernos como C, Java o Python).
 
 <p align="center">
   <img src="https://prog-o-manuais-plantillas-daw-bed5b048cbcd5bc455e9794fac9da239d.pages.iessanclemente.net/arrays/arraysuni/array.png" alt="Logotipo UNL" width="350">
@@ -213,20 +342,34 @@ Es una colección de datos organizada en una sola dimensión.
 int edades[5]={18,20,19,22,21};
 ```
 
-### 📌 Ejemplo Práctico
+### 📌 Ejemplo Aplicado
 
 ```c
 #include <stdio.h>
-int main(){
-    int lista[5], i;
-    for(i=0; i<5; i++){
-        printf("Ingrese el valor de posicion %i\n", i);
-        scanf("%i", &lista[i]);
 
+int numeros[5] = {1, 2, 3, 4, 5};
+
+void mostrarArreglo() {
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", numeros[i]);
     }
-    for(i=0; i<5 ; i++ ){
-        printf("posicion %i = %i\n", i, lista[i]);
+    printf("\n");
+}
+
+void duplicarArreglo() {
+    for (int i = 0; i < 5; i++) {
+        numeros[i] = numeros[i] * 2;
     }
+}
+
+int main() {
+    printf("Arreglo original: ");
+    mostrarArreglo();
+
+    duplicarArreglo();
+
+    printf("Arreglo modificado: ");
+    mostrarArreglo();
 
     return 0;
 }
@@ -235,7 +378,13 @@ int main(){
 
 # 🔹 Arreglo Bidimensional (Matriz)
 
-Organiza los datos en filas y columnas.
+Un **arreglo bidimensional** (comúnmente llamado **matriz** o tabla) es una estructura de datos que extiende el concepto de los vectores al utilizar **dos dimensiones**. Se puede visualizar como una cuadrícula compuesta por filas y columnas, donde cada elemento requiere de dos índices para ser identificado: uno para la fila y otro para la columna.
+
+## Características Principales
+
+* **Homogeneidad:** Al igual que los vectores, todos los elementos almacenados en una matriz deben ser estrictamente del mismo tipo de dato.
+* **Estructura Matricial:** Los datos se organizan en $m$ filas y $n$ columnas, formando un total de $m \times n$ elementos.
+* **Doble Indexación:** Se accede a cada elemento mediante un par de índices: el primero indica la fila (`i`) y el segundo la columna (`j`).
 
 <p align="center">
   <img src="https://www.programandojava.com/images/ArregloInt2x3Vacio.png" alt="Logotipo UNL" width="350">
@@ -245,50 +394,54 @@ Organiza los datos en filas y columnas.
 ### 💻 Ejemplo
 
 ```c
-int matriz[3][3];
+int matriz[3][3] = {
+                    {1, 2, 3},
+                    {4, 5, 6},
+                    {7, 8, 9}
+                   };
 ```
 
 ### 📌 Ejemplo Práctico
 
 ```c
-int main () {
-    // Matriz 
-    int matrizA[2][3], matrizC[2][3];
-    int matrizB[2][3], i, j,pq;
+#include <stdio.h>
 
-    // Datos de entrada
-    for(i = 0; i < 2; i++){        
-        for(j = 0; j < 3; j++){    
-            printf("Ingrese el valor de posicion [%i][%i] de la Matriz A\n", i, j);
-            scanf("%i", &matrizA[i][j]);
-        }
-    
-    }
-    printf("---------------------------------\n");
-      for(i = 0; i < 2; i++){        
-        for(j = 0; j < 3; j++){    
-            printf("Ingrese el valor de posicion [%i][%i] de la Matriz B\n", i, j);
-            scanf("%i", &matrizB[i][j]);
-        }
-    }
-    
-    printf("----------------------------------------------------------\n");
-    // Datos de salida 
-    for(i = 0; i < 2; i++){
-        for(j = 0; j < 3; j++){
-            printf("MATRIZ A posicion [%i][%i] = %i\n", i, j, matrizA[i][j]);
-           
-        }
-    }
-    printf("----------------------------------------------------------\n");
-    for(i = 0; i < 2; i++){
-        for(j = 0; j < 3; j++){
-            printf("MATRIZ B posicion [%i][%i] = %i\n", i, j, matrizB[i][j]);
-           
-        }
-    }
-    
+void mostrarMatriz(int matriz[3][3], int filas, int columnas);
+void duplicarMatriz(int matriz[3][3], int filas, int columnas);
+
+int main() {
+    int matriz[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    printf("Matriz original:\n");
+    mostrarMatriz(matriz, 3, 3);
+
+    duplicarMatriz(matriz, 3, 3);
+
+    printf("Matriz modificada:\n");
+    mostrarMatriz(matriz, 3, 3);
+
     return 0;
+}
+
+void mostrarMatriz(int matriz[3][3], int filas, int columnas) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void duplicarMatriz(int matriz[3][3], int filas, int columnas) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            matriz[i][j] = matriz[i][j] * 2;
+        }
+    }
 }
 ```
 
@@ -296,47 +449,86 @@ int main () {
 
 # 🔹 Arreglo Multidimensional
 
-Permite representar información con tres o más dimensiones.
+Un **arreglo multidimensional** es una estructura de datos que extiende el concepto de las matrices a **tres o más dimensiones** ($N$ dimensiones). Se puede visualizar conceptualmente como un "cubo" de datos (3D), un arreglo de cubos (4D), y así sucesivamente, donde cada elemento requiere $N$ índices para ser localizado de forma unívoca.
 
-Es utilizado en gráficos 3D, videojuegos, simulaciones científicas y procesamiento de imágenes.
+## Características Principales
+
+* **Homogeneidad:** Todos los elementos contenidos en el arreglo pertenecen estrictamente al mismo tipo de dato.
+* **Dimensionalidad Múltiple:** Utiliza tres o más índices independientes para representar relaciones de datos más complejas (por ejemplo: coordenadas espaciales $(x, y, z)$, series temporales con matrices, o voxels en gráficos 3D).
+* **Almacenamiento Continuo:** A pesar de su representación lógica en múltiples dimensiones, la memoria RAM sigue siendo lineal; el compilador mapea estos índices multidimensionales a un bloque de memoria contiguo (típicamente en orden de filas principales - *row-major order*).
 
 <p align="center">
   <img src="https://miro.medium.com/v2/resize:fit:1400/1*VbVvxuuT7L2k-imWZKNp8w.png" alt="Logotipo UNL" width="350">
 </p>
 
 ```text
-matriz[x][y][z]
+matriz[x][y][z] = {
+    {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    },
+    {
+        {10, 11, 12},
+        {13, 14, 15},
+        {16, 17, 18}
+    }
+};
 ```
 ### 📌 Ejemplo Práctico
 ```c
-    int main(){
-    //matrices
-    int matriz[2][2][3];
-    //Datos de entrada
-    int i,j,k;
+#include <stdio.h>
 
-    for(i = 0; i < 2; i ++){
-        for(j = 0; j < 2; j ++){
-            for (k = 0; k < 3; k ++){
-            printf("Ingrese el valor para:[%i] [%i] [%i]: \n", i, j,k);
-            scanf("%i", &matriz[i][j][k]);
-            }
+void mostrarCubo(int cubo[2][3][3], int capas, int filas, int columnas);
+void duplicarCubo(int cubo[2][3][3], int capas, int filas, int columnas);
+
+int main() {
+    int cubo[2][3][3] = {
+        {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        },
+        {
+            {10, 11, 12},
+            {13, 14, 15},
+            {16, 17, 18}
         }
-    }
+    };
 
-    //Datos de salida
-    for(i = 0; i < 2; i ++){
-        for(j = 0; j < 2; j ++){
-            for(k = 0; k < 3; k ++){
-            printf("[%i]", matriz[i][j][k]);
+    printf("Cubo original:\n");
+    mostrarCubo(cubo, 2, 3, 3);
+
+    duplicarCubo(cubo, 2, 3, 3);
+
+    printf("Cubo modificado:\n");
+    mostrarCubo(cubo, 2, 3, 3);
+
+    return 0;
+}
+
+void mostrarCubo(int cubo[2][3][3], int capas, int filas, int columnas) {
+    for (int k = 0; k < capas; k++) {
+        printf("Capa %d:\n", k + 1);
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                printf("%d ", cubo[k][i][j]);
             }
             printf("\n");
         }
         printf("\n");
+    }
+}
 
+void duplicarCubo(int cubo[2][3][3], int capas, int filas, int columnas) {
+    for (int k = 0; k < capas; k++) {
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                cubo[k][i][j] = cubo[k][i][j] * 2;
+            }
+        }
     }
-        return 0;
-    }
+}
 ```
 ---
 
