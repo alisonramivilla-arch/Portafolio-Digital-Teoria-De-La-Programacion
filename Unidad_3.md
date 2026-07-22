@@ -62,80 +62,27 @@ Toda función consta de tres componentes esenciales e interconectados:
 ```c
 #include <stdio.h>
 
-void mostrarMenu();
-float depositar(float saldo, float cantidad);
-float retirar(float saldo, float cantidad);
-void consultarSaldo(float saldo);
+float calcularAreaTriangulo(float base, float altura);
+void imprimirResultado(float area);
 
 int main() {
-    int opcion;
-    float saldo = 1000.0f;
-    float cantidad;
+    float base = 5.0;
+    float altura = 3.0;
+    float area;
 
-    do {
-        mostrarMenu();
-        if (scanf("%d", &opcion) != 1) {
-            break;
-        }
-
-        switch (opcion) {
-            case 1:
-                printf("Ingrese cantidad a depositar: ");
-                scanf("%f", &cantidad);
-                saldo = depositar(saldo, cantidad);
-                break;
-            case 2:
-                printf("Ingrese cantidad a retirar: ");
-                scanf("%f", &cantidad);
-                saldo = retirar(saldo, cantidad);
-                break;
-            case 3:
-                consultarSaldo(saldo);
-                break;
-            case 4:
-                printf("Saliendo...\n");
-                break;
-            default:
-                printf("Opcion invalida.\n");
-        }
-    } while (opcion != 4);
+    area = calcularAreaTriangulo(base, altura);
+    imprimirResultado(area);
 
     return 0;
 }
 
-void mostrarMenu() {
-    printf("\n--- BANCO MODULAR ---\n");
-    printf("1. Depositar\n");
-    printf("2. Retirar\n");
-    printf("3. Consultar saldo\n");
-    printf("4. Salir\n");
-    printf("Elija una opcion: ");
+float calcularAreaTriangulo(float base, float altura) {
+    return (base * altura) / 2.0;
 }
 
-float depositar(float saldo, float cantidad) {
-    if (cantidad > 0) {
-        saldo += cantidad;
-        printf("Deposito exitoso. Nuevo saldo: %.2f\n", saldo);
-    } else {
-        printf("Cantidad invalida.\n");
-    }
-    return saldo;
+void imprimirResultado(float area) {
+    printf("El area del triangulo es: %.2f\n", area);
 }
-
-float retirar(float saldo, float cantidad) {
-    if (cantidad > 0 && cantidad <= saldo) {
-        saldo -= cantidad;
-        printf("Retiro exitoso. Nuevo saldo: %.2f\n", saldo);
-    } else {
-        printf("Fondos insuficientes o cantidad invalida.\n");
-    }
-    return saldo;
-}
-
-void consultarSaldo(float saldo) {
-    printf("Saldo actual: %.2f\n", saldo);
-}
-
 ```
 
 # 🎯 Paso de Parámetros
@@ -163,7 +110,7 @@ El **paso de parámetros por valor** es un mecanismo de comunicación con funcio
 ### 📊 Esquema
 
 <p align="center">
-  <img src="blob:https://web.whatsapp.com/68875b54-9e17-4e91-9e81-8be1fa17a20a" alt="Logotipo UNL" width="350">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Gemini_Generated_Image_bpocxmbpocxmbpoc.png" alt="Logotipo UNL" width="600">
 </p>
 
 ### 💻 Ejemplo
@@ -197,27 +144,9 @@ El paso por referencia en **C** se simula explícitamente utilizando **punteros*
 
 ### 📊 Esquema
 
-```text
-main()
-
-numero = 10
-
-↓
-
-&numero
-
-↓
-
-Función(&numero)
-
-↓
-
-*numero = 20
-
-↓
-
-numero ahora vale 20
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alisonramivilla-arch/Imagenes/refs/heads/main/Gemini_Generated_Image_qr6ltpqr6ltpqr6l.png" alt="Logotipo UNL" width="600">
+</p>
 
 ### 💻 Ejemplo aplicado
 
@@ -314,7 +243,7 @@ Un **arreglo unidimensional** (también llamado vector) es una estructura de dat
 * **Indexación:** Cada posición del arreglo se identifica mediante un **índice** numérico (que comúnmente empieza desde `0` en la mayoría de lenguajes de programación modernos como C, Java o Python).
 
 <p align="center">
-  <img src="https://prog-o-manuais-plantillas-daw-bed5b048cbcd5bc455e9794fac9da239d.pages.iessanclemente.net/arrays/arraysuni/array.png" alt="Logotipo UNL" width="350">
+  <img src="https://prog-o-manuais-plantillas-daw-bed5b048cbcd5bc455e9794fac9da239d.pages.iessanclemente.net/arrays/arraysuni/array.png" alt="Logotipo UNL" width="600">
 </p>
 
 
@@ -369,9 +298,8 @@ Un **arreglo bidimensional** (comúnmente llamado **matriz** o tabla) es una est
 * **Doble Indexación:** Se accede a cada elemento mediante un par de índices: el primero indica la fila (`i`) y el segundo la columna (`j`).
 
 <p align="center">
-  <img src="https://www.programandojava.com/images/ArregloInt2x3Vacio.png" alt="Logotipo UNL" width="350">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3a0i2IKRrJpNtIWlrj7xCkTUUs-uKhSZCLyWkM2iL4xjW0l0qT-5kGU1p&s=10" alt="Logotipo UNL" width="600">
 </p>
-
 
 ### 💻 Ejemplo
 
@@ -440,7 +368,7 @@ Un **arreglo multidimensional** es una estructura de datos que extiende el conce
 * **Almacenamiento Continuo:** A pesar de su representación lógica en múltiples dimensiones, la memoria RAM sigue siendo lineal; el compilador mapea estos índices multidimensionales a un bloque de memoria contiguo (típicamente en orden de filas principales - *row-major order*).
 
 <p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/1*VbVvxuuT7L2k-imWZKNp8w.png" alt="Logotipo UNL" width="350">
+  <img src="https://miro.medium.com/v2/resize:fit:1400/1*VbVvxuuT7L2k-imWZKNp8w.png" alt="Logotipo UNL" width="600">
 </p>
 
 ```text
