@@ -162,27 +162,9 @@ El **paso de parámetros por valor** es un mecanismo de comunicación con funcio
 
 ### 📊 Esquema
 
-```text
-main()
-
-numero = 10
-
-↓
-
-Función(numero)
-
-↓
-
-Copia = 10
-
-↓
-
-Se modifica la copia
-
-↓
-
-numero sigue valiendo 10
-```
+<p align="center">
+  <img src="blob:https://web.whatsapp.com/68875b54-9e17-4e91-9e81-8be1fa17a20a" alt="Logotipo UNL" width="350">
+</p>
 
 ### 💻 Ejemplo
 
